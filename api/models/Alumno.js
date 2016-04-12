@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-  	
+
   	dni : { type: 'string', size: 10 },
 
     apellido1 : { type: 'string', size: 30 },
@@ -19,7 +19,15 @@ module.exports = {
 
     fechaNac : { type: 'date' },
 
-    email : { type: 'string', email: true, unique: true, required: true}
+    email : { type: 'string', email: true, unique: true, required: true},
+
+    user: {
+        model: 'user'
+    },
+    grupos: {
+        collection : 'grupo',
+        via : 'alumnos'
+    },
   }
 };
 

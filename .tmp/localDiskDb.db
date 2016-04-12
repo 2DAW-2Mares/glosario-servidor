@@ -1,7 +1,259 @@
 {
   "data": {
+    "alumno": [],
     "criteria": [],
+    "grupo": [],
+    "materia": [],
+    "materiaimpartida": [],
+    "materiamatriculada": [],
     "model": [
+      {
+        "name": "Alumno",
+        "identity": "alumno",
+        "attributes": {
+          "dni": {
+            "type": "string",
+            "size": 10
+          },
+          "apellido1": {
+            "type": "string",
+            "size": 30
+          },
+          "apellido2": {
+            "type": "string",
+            "size": 30
+          },
+          "nombre": {
+            "type": "string",
+            "size": 30,
+            "required": true
+          },
+          "fechaNac": {
+            "type": "date"
+          },
+          "email": {
+            "type": "string",
+            "email": true,
+            "unique": true,
+            "required": true
+          },
+          "user": {
+            "model": "user"
+          },
+          "grupos": {
+            "collection": "grupo",
+            "via": "alumnos"
+          },
+          "createdBy": {
+            "model": "user",
+            "index": true
+          },
+          "owner": {
+            "model": "user",
+            "index": true
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 9
+      },
+      {
+        "name": "Grupo",
+        "identity": "grupo",
+        "attributes": {
+          "anyo": {
+            "type": "string",
+            "size": 7,
+            "required": true
+          },
+          "grupo": {
+            "type": "string",
+            "size": 5,
+            "required": true
+          },
+          "subgrupo": {
+            "type": "string",
+            "size": 5,
+            "required": true
+          },
+          "ensenyanza": {
+            "type": "string",
+            "size": 80
+          },
+          "curso": {
+            "type": "int",
+            "size": 1
+          },
+          "alumnos": {
+            "collection": "alumno",
+            "via": "grupos"
+          },
+          "createdBy": {
+            "model": "user",
+            "index": true
+          },
+          "owner": {
+            "model": "user",
+            "index": true
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 10
+      },
+      {
+        "name": "Materia",
+        "identity": "materia",
+        "attributes": {
+          "codigo": {
+            "type": "string",
+            "size": 6,
+            "unique": true,
+            "primaryKey": true
+          },
+          "materia": {
+            "type": "string",
+            "size": 100
+          },
+          "ensenanza": {
+            "type": "string",
+            "size": 100
+          },
+          "curso": {
+            "type": "string",
+            "size": 1
+          },
+          "materiasMatriculadas": {
+            "collection": "materiamatriculada",
+            "via": "materia"
+          },
+          "materiasImpartidas": {
+            "collection": "materiaimpartida",
+            "via": "materia"
+          },
+          "createdBy": {
+            "model": "user",
+            "index": true
+          },
+          "owner": {
+            "model": "user",
+            "index": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 11
+      },
+      {
+        "name": "MateriaImpartida",
+        "identity": "materiaimpartida",
+        "attributes": {
+          "materia": {
+            "model": "materia"
+          },
+          "profesor": {
+            "model": "profesor"
+          },
+          "grupo": {
+            "model": "grupo"
+          },
+          "createdBy": {
+            "model": "user",
+            "index": true
+          },
+          "owner": {
+            "model": "user",
+            "index": true
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 12
+      },
+      {
+        "name": "MateriaMatriculada",
+        "identity": "materiamatriculada",
+        "attributes": {
+          "expediente": {
+            "model": "alumno"
+          },
+          "materia": {
+            "model": "materia"
+          },
+          "profesor": {
+            "model": "profesor"
+          },
+          "anyo": {
+            "type": "integer",
+            "size": 4
+          },
+          "createdBy": {
+            "model": "user",
+            "index": true
+          },
+          "owner": {
+            "model": "user",
+            "index": true
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 13
+      },
       {
         "name": "Model",
         "identity": "model",
@@ -29,7 +281,7 @@
             "unique": true
           }
         },
-        "id": 5
+        "id": 14
       },
       {
         "name": "Permission",
@@ -85,7 +337,55 @@
             "default": "NOW"
           }
         },
-        "id": 6
+        "id": 15
+      },
+      {
+        "name": "Profesor",
+        "identity": "profesor",
+        "attributes": {
+          "apellidos": {
+            "type": "string",
+            "size": 19
+          },
+          "nombre": {
+            "type": "string",
+            "size": 19
+          },
+          "email": {
+            "type": "string",
+            "size": 100
+          },
+          "user": {
+            "model": "user"
+          },
+          "materias": {
+            "collection": "materiaimpartida",
+            "via": "profesor"
+          },
+          "createdBy": {
+            "model": "user",
+            "index": true
+          },
+          "owner": {
+            "model": "user",
+            "index": true
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 16
       },
       {
         "name": "Role",
@@ -125,7 +425,7 @@
             "default": "NOW"
           }
         },
-        "id": 7
+        "id": 17
       },
       {
         "name": "User",
@@ -179,234 +479,440 @@
             "default": "NOW"
           }
         },
-        "id": 8
+        "id": 18
       }
     ],
     "passport": [
       {
         "protocol": "local",
-        "password": "$2a$08$y54eqx4w4HGwxsq8ezl4surKpJjmUttx.HOcdQ7ZcwwZ6yAnB2wFu",
-        "user": 2,
-        "createdAt": "2016-04-12T10:22:08.717Z",
-        "updatedAt": "2016-04-12T10:22:08.717Z",
-        "id": 2
+        "password": "$2a$08$xYogvkflf7gcir/UFRB45uIvrJ6Dj23.mm3s5w5g.9U.7yPVlYQ8K",
+        "user": 3,
+        "createdAt": "2016-04-12T10:45:59.951Z",
+        "updatedAt": "2016-04-12T10:45:59.951Z",
+        "id": 3
       }
     ],
     "permission": [
       {
-        "model": 5,
+        "model": 9,
         "action": "create",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.814Z",
-        "updatedAt": "2016-04-12T10:22:08.814Z",
-        "id": 21
+        "createdAt": "2016-04-12T10:46:00.101Z",
+        "updatedAt": "2016-04-12T10:46:00.101Z",
+        "id": 41
       },
       {
-        "model": 5,
+        "model": 9,
         "action": "read",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.817Z",
-        "updatedAt": "2016-04-12T10:22:08.817Z",
-        "id": 22
+        "createdAt": "2016-04-12T10:46:00.104Z",
+        "updatedAt": "2016-04-12T10:46:00.104Z",
+        "id": 42
       },
       {
-        "model": 5,
+        "model": 9,
         "action": "update",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.821Z",
-        "updatedAt": "2016-04-12T10:22:08.821Z",
-        "id": 23
+        "createdAt": "2016-04-12T10:46:00.108Z",
+        "updatedAt": "2016-04-12T10:46:00.108Z",
+        "id": 43
       },
       {
-        "model": 5,
+        "model": 9,
         "action": "delete",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.825Z",
-        "updatedAt": "2016-04-12T10:22:08.825Z",
-        "id": 24
+        "createdAt": "2016-04-12T10:46:00.112Z",
+        "updatedAt": "2016-04-12T10:46:00.112Z",
+        "id": 44
       },
       {
-        "model": 6,
+        "model": 10,
         "action": "create",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.827Z",
-        "updatedAt": "2016-04-12T10:22:08.827Z",
-        "id": 25
+        "createdAt": "2016-04-12T10:46:00.118Z",
+        "updatedAt": "2016-04-12T10:46:00.118Z",
+        "id": 45
       },
       {
-        "model": 6,
+        "model": 10,
         "action": "read",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.829Z",
-        "updatedAt": "2016-04-12T10:22:08.829Z",
-        "id": 26
+        "createdAt": "2016-04-12T10:46:00.122Z",
+        "updatedAt": "2016-04-12T10:46:00.122Z",
+        "id": 46
       },
       {
-        "model": 6,
+        "model": 10,
         "action": "update",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.832Z",
-        "updatedAt": "2016-04-12T10:22:08.832Z",
-        "id": 27
+        "createdAt": "2016-04-12T10:46:00.130Z",
+        "updatedAt": "2016-04-12T10:46:00.130Z",
+        "id": 47
       },
       {
-        "model": 6,
+        "model": 10,
         "action": "delete",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.838Z",
-        "updatedAt": "2016-04-12T10:22:08.838Z",
-        "id": 28
+        "createdAt": "2016-04-12T10:46:00.134Z",
+        "updatedAt": "2016-04-12T10:46:00.134Z",
+        "id": 48
       },
       {
-        "model": 7,
+        "model": 11,
         "action": "create",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.840Z",
-        "updatedAt": "2016-04-12T10:22:08.840Z",
-        "id": 29
+        "createdAt": "2016-04-12T10:46:00.138Z",
+        "updatedAt": "2016-04-12T10:46:00.138Z",
+        "id": 49
       },
       {
-        "model": 7,
+        "model": 11,
         "action": "read",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.845Z",
-        "updatedAt": "2016-04-12T10:22:08.845Z",
-        "id": 30
+        "createdAt": "2016-04-12T10:46:00.141Z",
+        "updatedAt": "2016-04-12T10:46:00.141Z",
+        "id": 50
       },
       {
-        "model": 7,
+        "model": 11,
         "action": "update",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.848Z",
-        "updatedAt": "2016-04-12T10:22:08.848Z",
-        "id": 31
+        "createdAt": "2016-04-12T10:46:00.145Z",
+        "updatedAt": "2016-04-12T10:46:00.145Z",
+        "id": 51
       },
       {
-        "model": 7,
+        "model": 11,
         "action": "delete",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.851Z",
-        "updatedAt": "2016-04-12T10:22:08.851Z",
-        "id": 32
+        "createdAt": "2016-04-12T10:46:00.149Z",
+        "updatedAt": "2016-04-12T10:46:00.149Z",
+        "id": 52
       },
       {
-        "model": 8,
+        "model": 12,
         "action": "create",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.854Z",
-        "updatedAt": "2016-04-12T10:22:08.854Z",
-        "id": 33
+        "createdAt": "2016-04-12T10:46:00.153Z",
+        "updatedAt": "2016-04-12T10:46:00.153Z",
+        "id": 53
       },
       {
-        "model": 8,
+        "model": 12,
         "action": "read",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.856Z",
-        "updatedAt": "2016-04-12T10:22:08.856Z",
-        "id": 34
+        "createdAt": "2016-04-12T10:46:00.157Z",
+        "updatedAt": "2016-04-12T10:46:00.157Z",
+        "id": 54
       },
       {
-        "model": 8,
+        "model": 12,
         "action": "update",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.862Z",
-        "updatedAt": "2016-04-12T10:22:08.862Z",
-        "id": 35
+        "createdAt": "2016-04-12T10:46:00.161Z",
+        "updatedAt": "2016-04-12T10:46:00.161Z",
+        "id": 55
       },
       {
-        "model": 8,
+        "model": 12,
         "action": "delete",
-        "role": 4,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.865Z",
-        "updatedAt": "2016-04-12T10:22:08.865Z",
-        "id": 36
+        "createdAt": "2016-04-12T10:46:00.165Z",
+        "updatedAt": "2016-04-12T10:46:00.165Z",
+        "id": 56
       },
       {
-        "model": 6,
+        "model": 13,
+        "action": "create",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.169Z",
+        "updatedAt": "2016-04-12T10:46:00.169Z",
+        "id": 57
+      },
+      {
+        "model": 13,
         "action": "read",
-        "role": 5,
+        "role": 7,
         "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.866Z",
-        "updatedAt": "2016-04-12T10:22:08.866Z",
-        "id": 37
+        "createdAt": "2016-04-12T10:46:00.173Z",
+        "updatedAt": "2016-04-12T10:46:00.173Z",
+        "id": 58
       },
       {
-        "model": 5,
-        "action": "read",
-        "role": 5,
-        "relation": "role",
-        "createdAt": "2016-04-12T10:22:08.870Z",
-        "updatedAt": "2016-04-12T10:22:08.870Z",
-        "id": 38
-      },
-      {
-        "model": 8,
+        "model": 13,
         "action": "update",
-        "role": 5,
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.177Z",
+        "updatedAt": "2016-04-12T10:46:00.177Z",
+        "id": 59
+      },
+      {
+        "model": 13,
+        "action": "delete",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.185Z",
+        "updatedAt": "2016-04-12T10:46:00.185Z",
+        "id": 60
+      },
+      {
+        "model": 14,
+        "action": "create",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.188Z",
+        "updatedAt": "2016-04-12T10:46:00.188Z",
+        "id": 61
+      },
+      {
+        "model": 14,
+        "action": "read",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.192Z",
+        "updatedAt": "2016-04-12T10:46:00.192Z",
+        "id": 62
+      },
+      {
+        "model": 14,
+        "action": "update",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.196Z",
+        "updatedAt": "2016-04-12T10:46:00.196Z",
+        "id": 63
+      },
+      {
+        "model": 14,
+        "action": "delete",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.202Z",
+        "updatedAt": "2016-04-12T10:46:00.202Z",
+        "id": 64
+      },
+      {
+        "model": 15,
+        "action": "create",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.210Z",
+        "updatedAt": "2016-04-12T10:46:00.210Z",
+        "id": 65
+      },
+      {
+        "model": 15,
+        "action": "read",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.212Z",
+        "updatedAt": "2016-04-12T10:46:00.212Z",
+        "id": 66
+      },
+      {
+        "model": 15,
+        "action": "update",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.216Z",
+        "updatedAt": "2016-04-12T10:46:00.216Z",
+        "id": 67
+      },
+      {
+        "model": 15,
+        "action": "delete",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.222Z",
+        "updatedAt": "2016-04-12T10:46:00.222Z",
+        "id": 68
+      },
+      {
+        "model": 16,
+        "action": "create",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.226Z",
+        "updatedAt": "2016-04-12T10:46:00.226Z",
+        "id": 69
+      },
+      {
+        "model": 16,
+        "action": "read",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.233Z",
+        "updatedAt": "2016-04-12T10:46:00.233Z",
+        "id": 70
+      },
+      {
+        "model": 16,
+        "action": "update",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.236Z",
+        "updatedAt": "2016-04-12T10:46:00.236Z",
+        "id": 71
+      },
+      {
+        "model": 16,
+        "action": "delete",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.244Z",
+        "updatedAt": "2016-04-12T10:46:00.244Z",
+        "id": 72
+      },
+      {
+        "model": 17,
+        "action": "create",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.249Z",
+        "updatedAt": "2016-04-12T10:46:00.249Z",
+        "id": 73
+      },
+      {
+        "model": 17,
+        "action": "read",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.253Z",
+        "updatedAt": "2016-04-12T10:46:00.253Z",
+        "id": 74
+      },
+      {
+        "model": 17,
+        "action": "update",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.257Z",
+        "updatedAt": "2016-04-12T10:46:00.257Z",
+        "id": 75
+      },
+      {
+        "model": 17,
+        "action": "delete",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.265Z",
+        "updatedAt": "2016-04-12T10:46:00.265Z",
+        "id": 76
+      },
+      {
+        "model": 18,
+        "action": "create",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.272Z",
+        "updatedAt": "2016-04-12T10:46:00.272Z",
+        "id": 77
+      },
+      {
+        "model": 18,
+        "action": "read",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.276Z",
+        "updatedAt": "2016-04-12T10:46:00.276Z",
+        "id": 78
+      },
+      {
+        "model": 18,
+        "action": "update",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.280Z",
+        "updatedAt": "2016-04-12T10:46:00.280Z",
+        "id": 79
+      },
+      {
+        "model": 18,
+        "action": "delete",
+        "role": 7,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.284Z",
+        "updatedAt": "2016-04-12T10:46:00.284Z",
+        "id": 80
+      },
+      {
+        "model": 15,
+        "action": "read",
+        "role": 8,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.289Z",
+        "updatedAt": "2016-04-12T10:46:00.289Z",
+        "id": 81
+      },
+      {
+        "model": 14,
+        "action": "read",
+        "role": 8,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:46:00.296Z",
+        "updatedAt": "2016-04-12T10:46:00.296Z",
+        "id": 82
+      },
+      {
+        "model": 18,
+        "action": "update",
+        "role": 8,
         "relation": "owner",
-        "createdAt": "2016-04-12T10:22:08.875Z",
-        "updatedAt": "2016-04-12T10:22:08.875Z",
-        "id": 39
+        "createdAt": "2016-04-12T10:46:00.298Z",
+        "updatedAt": "2016-04-12T10:46:00.298Z",
+        "id": 83
       },
       {
-        "model": 8,
+        "model": 18,
         "action": "read",
-        "role": 5,
+        "role": 8,
         "relation": "owner",
-        "createdAt": "2016-04-12T10:22:08.894Z",
-        "updatedAt": "2016-04-12T10:22:08.894Z",
-        "id": 40
+        "createdAt": "2016-04-12T10:46:00.327Z",
+        "updatedAt": "2016-04-12T10:46:00.327Z",
+        "id": 84
       }
     ],
-    "requestlog": [
-      {
-        "id": "cgugddvmc304pa8fejydmlxpk",
-        "ipAddress": "::ffff:127.0.0.1",
-        "url": "http://localhost/role",
-        "method": "GET",
-        "body": {},
-        "model": "role",
-        "user": 2,
-        "createdAt": "2016-04-12T10:23:04.327Z"
-      }
-    ],
+    "profesor": [],
+    "requestlog": [],
     "role": [
       {
         "name": "admin",
         "active": true,
-        "createdAt": "2016-04-12T10:22:08.299Z",
-        "updatedAt": "2016-04-12T10:22:08.299Z",
-        "id": 4
+        "createdAt": "2016-04-12T10:45:59.524Z",
+        "updatedAt": "2016-04-12T10:45:59.524Z",
+        "id": 7
       },
       {
         "name": "registered",
         "active": true,
-        "createdAt": "2016-04-12T10:22:08.306Z",
-        "updatedAt": "2016-04-12T10:22:08.306Z",
-        "id": 5
+        "createdAt": "2016-04-12T10:45:59.528Z",
+        "updatedAt": "2016-04-12T10:45:59.528Z",
+        "id": 8
       },
       {
         "name": "public",
         "active": true,
-        "createdAt": "2016-04-12T10:22:08.314Z",
-        "updatedAt": "2016-04-12T10:22:08.314Z",
-        "id": 6
+        "createdAt": "2016-04-12T10:45:59.553Z",
+        "updatedAt": "2016-04-12T10:45:59.553Z",
+        "id": 9
       }
     ],
     "securitylog": [],
@@ -414,28 +920,86 @@
       {
         "username": "admin",
         "email": "admin@example.com",
-        "createdBy": 2,
-        "owner": 2,
-        "model": 8,
-        "createdAt": "2016-04-12T10:22:08.370Z",
-        "updatedAt": "2016-04-12T10:22:08.735Z",
-        "id": 2
+        "createdBy": 3,
+        "owner": 3,
+        "model": 18,
+        "createdAt": "2016-04-12T10:45:59.625Z",
+        "updatedAt": "2016-04-12T10:45:59.974Z",
+        "id": 3
       }
     ],
+    "alumno_grupos__grupo_alumnos": [],
     "role_users__user_roles": [
       {
-        "role_users": 4,
-        "user_roles": 2,
-        "id": 3
+        "role_users": 7,
+        "user_roles": 3,
+        "id": 5
       },
       {
-        "role_users": 5,
-        "user_roles": 2,
-        "id": 4
+        "role_users": 8,
+        "user_roles": 3,
+        "id": 6
       }
     ]
   },
   "schema": {
+    "alumno": {
+      "dni": {
+        "type": "string",
+        "size": 10
+      },
+      "apellido1": {
+        "type": "string",
+        "size": 30
+      },
+      "apellido2": {
+        "type": "string",
+        "size": 30
+      },
+      "nombre": {
+        "type": "string",
+        "size": 30
+      },
+      "fechaNac": {
+        "type": "date"
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
     "criteria": {
       "where": {
         "type": "json"
@@ -448,6 +1012,190 @@
         "model": "permission",
         "foreignKey": true,
         "alias": "permission"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "grupo": {
+      "anyo": {
+        "type": "string",
+        "size": 7
+      },
+      "grupo": {
+        "type": "string",
+        "size": 5
+      },
+      "subgrupo": {
+        "type": "string",
+        "size": 5
+      },
+      "ensenyanza": {
+        "type": "string",
+        "size": 80
+      },
+      "curso": {
+        "type": "string",
+        "size": 1
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "materia": {
+      "codigo": {
+        "type": "string",
+        "size": 6,
+        "unique": true,
+        "primaryKey": true
+      },
+      "materia": {
+        "type": "string",
+        "size": 100
+      },
+      "ensenanza": {
+        "type": "string",
+        "size": 100
+      },
+      "curso": {
+        "type": "string",
+        "size": 1
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "materiaimpartida": {
+      "materia": {
+        "type": "string",
+        "model": "materia",
+        "foreignKey": true,
+        "alias": "materia"
+      },
+      "profesor": {
+        "type": "integer",
+        "model": "profesor",
+        "foreignKey": true,
+        "alias": "profesor"
+      },
+      "grupo": {
+        "type": "integer",
+        "model": "grupo",
+        "foreignKey": true,
+        "alias": "grupo"
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "materiamatriculada": {
+      "expediente": {
+        "type": "integer",
+        "model": "alumno",
+        "foreignKey": true,
+        "alias": "expediente"
+      },
+      "materia": {
+        "type": "string",
+        "model": "materia",
+        "foreignKey": true,
+        "alias": "materia"
+      },
+      "profesor": {
+        "type": "integer",
+        "model": "profesor",
+        "foreignKey": true,
+        "alias": "profesor"
+      },
+      "anyo": {
+        "type": "integer",
+        "size": 4
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
       },
       "id": {
         "type": "integer",
@@ -556,6 +1304,52 @@
         "model": "user",
         "foreignKey": true,
         "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "profesor": {
+      "apellidos": {
+        "type": "string",
+        "size": 19
+      },
+      "nombre": {
+        "type": "string",
+        "size": 19
+      },
+      "email": {
+        "type": "string",
+        "size": 100
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
       },
       "id": {
         "type": "integer",
@@ -690,6 +1484,28 @@
         "type": "datetime"
       }
     },
+    "alumno_grupos__grupo_alumnos": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "alumno_grupos": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "alumno",
+        "on": "id",
+        "via": "grupo_alumnos"
+      },
+      "grupo_alumnos": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "grupo",
+        "on": "id",
+        "via": "alumno_grupos"
+      }
+    },
     "role_users__user_roles": {
       "id": {
         "primaryKey": true,
@@ -716,24 +1532,31 @@
   "counters": {
     "criteria": {},
     "model": {
-      "id": 8
+      "id": 18
     },
     "passport": {
-      "id": 2
+      "id": 3
     },
     "permission": {
-      "id": 40
+      "id": 84
     },
     "requestlog": {},
     "role": {
-      "id": 6
+      "id": 9
     },
     "securitylog": {},
     "user": {
-      "id": 2
+      "id": 3
     },
     "role_users__user_roles": {
-      "id": 4
-    }
+      "id": 6
+    },
+    "alumno": {},
+    "grupo": {},
+    "materia": {},
+    "materiaimpartida": {},
+    "materiamatriculada": {},
+    "profesor": {},
+    "alumno_grupos__grupo_alumnos": {}
   }
 }
