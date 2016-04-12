@@ -1,0 +1,739 @@
+{
+  "data": {
+    "criteria": [],
+    "model": [
+      {
+        "name": "Model",
+        "identity": "model",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "notNull": true,
+            "unique": true
+          },
+          "identity": {
+            "type": "string",
+            "notNull": true
+          },
+          "attributes": {
+            "type": "json"
+          },
+          "permissions": {
+            "collection": "permission",
+            "via": "model"
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          }
+        },
+        "id": 5
+      },
+      {
+        "name": "Permission",
+        "identity": "permission",
+        "attributes": {
+          "model": {
+            "model": "model",
+            "required": true
+          },
+          "action": {
+            "type": "string",
+            "index": true,
+            "notNull": true,
+            "enum": [
+              "create",
+              "read",
+              "update",
+              "delete"
+            ]
+          },
+          "relation": {
+            "type": "string",
+            "enum": [
+              "role",
+              "owner",
+              "user"
+            ],
+            "defaultsTo": "role",
+            "index": true
+          },
+          "role": {
+            "model": "role"
+          },
+          "user": {
+            "model": "user"
+          },
+          "criteria": {
+            "collection": "criteria",
+            "via": "permission"
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 6
+      },
+      {
+        "name": "Role",
+        "identity": "role",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "index": true,
+            "notNull": true,
+            "unique": true
+          },
+          "users": {
+            "collection": "user",
+            "via": "roles"
+          },
+          "active": {
+            "type": "boolean",
+            "defaultsTo": true,
+            "index": true
+          },
+          "permissions": {
+            "collection": "permission",
+            "via": "role"
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 7
+      },
+      {
+        "name": "User",
+        "identity": "user",
+        "attributes": {
+          "username": {
+            "type": "string",
+            "unique": true,
+            "index": true,
+            "notNull": true
+          },
+          "email": {
+            "type": "email",
+            "notNull": true,
+            "unique": true,
+            "index": true
+          },
+          "passports": {
+            "collection": "passport",
+            "via": "user"
+          },
+          "roles": {
+            "collection": "role",
+            "via": "users",
+            "dominant": true
+          },
+          "permissions": {
+            "collection": "permission",
+            "via": "user"
+          },
+          "createdBy": {
+            "model": "user",
+            "index": true
+          },
+          "owner": {
+            "model": "user",
+            "index": true
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 8
+      }
+    ],
+    "passport": [
+      {
+        "protocol": "local",
+        "password": "$2a$08$y54eqx4w4HGwxsq8ezl4surKpJjmUttx.HOcdQ7ZcwwZ6yAnB2wFu",
+        "user": 2,
+        "createdAt": "2016-04-12T10:22:08.717Z",
+        "updatedAt": "2016-04-12T10:22:08.717Z",
+        "id": 2
+      }
+    ],
+    "permission": [
+      {
+        "model": 5,
+        "action": "create",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.814Z",
+        "updatedAt": "2016-04-12T10:22:08.814Z",
+        "id": 21
+      },
+      {
+        "model": 5,
+        "action": "read",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.817Z",
+        "updatedAt": "2016-04-12T10:22:08.817Z",
+        "id": 22
+      },
+      {
+        "model": 5,
+        "action": "update",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.821Z",
+        "updatedAt": "2016-04-12T10:22:08.821Z",
+        "id": 23
+      },
+      {
+        "model": 5,
+        "action": "delete",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.825Z",
+        "updatedAt": "2016-04-12T10:22:08.825Z",
+        "id": 24
+      },
+      {
+        "model": 6,
+        "action": "create",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.827Z",
+        "updatedAt": "2016-04-12T10:22:08.827Z",
+        "id": 25
+      },
+      {
+        "model": 6,
+        "action": "read",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.829Z",
+        "updatedAt": "2016-04-12T10:22:08.829Z",
+        "id": 26
+      },
+      {
+        "model": 6,
+        "action": "update",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.832Z",
+        "updatedAt": "2016-04-12T10:22:08.832Z",
+        "id": 27
+      },
+      {
+        "model": 6,
+        "action": "delete",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.838Z",
+        "updatedAt": "2016-04-12T10:22:08.838Z",
+        "id": 28
+      },
+      {
+        "model": 7,
+        "action": "create",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.840Z",
+        "updatedAt": "2016-04-12T10:22:08.840Z",
+        "id": 29
+      },
+      {
+        "model": 7,
+        "action": "read",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.845Z",
+        "updatedAt": "2016-04-12T10:22:08.845Z",
+        "id": 30
+      },
+      {
+        "model": 7,
+        "action": "update",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.848Z",
+        "updatedAt": "2016-04-12T10:22:08.848Z",
+        "id": 31
+      },
+      {
+        "model": 7,
+        "action": "delete",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.851Z",
+        "updatedAt": "2016-04-12T10:22:08.851Z",
+        "id": 32
+      },
+      {
+        "model": 8,
+        "action": "create",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.854Z",
+        "updatedAt": "2016-04-12T10:22:08.854Z",
+        "id": 33
+      },
+      {
+        "model": 8,
+        "action": "read",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.856Z",
+        "updatedAt": "2016-04-12T10:22:08.856Z",
+        "id": 34
+      },
+      {
+        "model": 8,
+        "action": "update",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.862Z",
+        "updatedAt": "2016-04-12T10:22:08.862Z",
+        "id": 35
+      },
+      {
+        "model": 8,
+        "action": "delete",
+        "role": 4,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.865Z",
+        "updatedAt": "2016-04-12T10:22:08.865Z",
+        "id": 36
+      },
+      {
+        "model": 6,
+        "action": "read",
+        "role": 5,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.866Z",
+        "updatedAt": "2016-04-12T10:22:08.866Z",
+        "id": 37
+      },
+      {
+        "model": 5,
+        "action": "read",
+        "role": 5,
+        "relation": "role",
+        "createdAt": "2016-04-12T10:22:08.870Z",
+        "updatedAt": "2016-04-12T10:22:08.870Z",
+        "id": 38
+      },
+      {
+        "model": 8,
+        "action": "update",
+        "role": 5,
+        "relation": "owner",
+        "createdAt": "2016-04-12T10:22:08.875Z",
+        "updatedAt": "2016-04-12T10:22:08.875Z",
+        "id": 39
+      },
+      {
+        "model": 8,
+        "action": "read",
+        "role": 5,
+        "relation": "owner",
+        "createdAt": "2016-04-12T10:22:08.894Z",
+        "updatedAt": "2016-04-12T10:22:08.894Z",
+        "id": 40
+      }
+    ],
+    "requestlog": [
+      {
+        "id": "cgugddvmc304pa8fejydmlxpk",
+        "ipAddress": "::ffff:127.0.0.1",
+        "url": "http://localhost/role",
+        "method": "GET",
+        "body": {},
+        "model": "role",
+        "user": 2,
+        "createdAt": "2016-04-12T10:23:04.327Z"
+      }
+    ],
+    "role": [
+      {
+        "name": "admin",
+        "active": true,
+        "createdAt": "2016-04-12T10:22:08.299Z",
+        "updatedAt": "2016-04-12T10:22:08.299Z",
+        "id": 4
+      },
+      {
+        "name": "registered",
+        "active": true,
+        "createdAt": "2016-04-12T10:22:08.306Z",
+        "updatedAt": "2016-04-12T10:22:08.306Z",
+        "id": 5
+      },
+      {
+        "name": "public",
+        "active": true,
+        "createdAt": "2016-04-12T10:22:08.314Z",
+        "updatedAt": "2016-04-12T10:22:08.314Z",
+        "id": 6
+      }
+    ],
+    "securitylog": [],
+    "user": [
+      {
+        "username": "admin",
+        "email": "admin@example.com",
+        "createdBy": 2,
+        "owner": 2,
+        "model": 8,
+        "createdAt": "2016-04-12T10:22:08.370Z",
+        "updatedAt": "2016-04-12T10:22:08.735Z",
+        "id": 2
+      }
+    ],
+    "role_users__user_roles": [
+      {
+        "role_users": 4,
+        "user_roles": 2,
+        "id": 3
+      },
+      {
+        "role_users": 5,
+        "user_roles": 2,
+        "id": 4
+      }
+    ]
+  },
+  "schema": {
+    "criteria": {
+      "where": {
+        "type": "json"
+      },
+      "blacklist": {
+        "type": "array"
+      },
+      "permission": {
+        "type": "integer",
+        "model": "permission",
+        "foreignKey": true,
+        "alias": "permission"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "model": {
+      "name": {
+        "type": "string",
+        "notNull": true,
+        "unique": true
+      },
+      "identity": {
+        "type": "string",
+        "notNull": true
+      },
+      "attributes": {
+        "type": "json"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
+    "passport": {
+      "protocol": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "provider": {
+        "type": "string"
+      },
+      "identifier": {
+        "type": "string"
+      },
+      "tokens": {
+        "type": "json"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "permission": {
+      "model": {
+        "type": "integer",
+        "model": "model",
+        "foreignKey": true,
+        "alias": "model"
+      },
+      "action": {
+        "type": "string",
+        "index": true,
+        "notNull": true,
+        "enum": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      },
+      "relation": {
+        "type": "string",
+        "enum": [
+          "role",
+          "owner",
+          "user"
+        ],
+        "defaultsTo": "role",
+        "index": true
+      },
+      "role": {
+        "type": "integer",
+        "model": "role",
+        "foreignKey": true,
+        "alias": "role"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "requestlog": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "ipAddress": {
+        "type": "string"
+      },
+      "method": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string"
+      },
+      "body": {
+        "type": "json"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "model": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      }
+    },
+    "role": {
+      "name": {
+        "type": "string",
+        "index": true,
+        "notNull": true,
+        "unique": true
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true,
+        "index": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "securitylog": {
+      "request": {
+        "type": "string",
+        "model": "requestlog",
+        "foreignKey": true,
+        "alias": "request",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
+      }
+    },
+    "user": {
+      "username": {
+        "type": "string",
+        "unique": true,
+        "index": true,
+        "notNull": true
+      },
+      "email": {
+        "type": "string",
+        "notNull": true,
+        "unique": true,
+        "index": true
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "role_users__user_roles": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "role_users": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "role",
+        "on": "id",
+        "via": "user_roles"
+      },
+      "user_roles": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "user",
+        "on": "id",
+        "via": "role_users"
+      }
+    }
+  },
+  "counters": {
+    "criteria": {},
+    "model": {
+      "id": 8
+    },
+    "passport": {
+      "id": 2
+    },
+    "permission": {
+      "id": 40
+    },
+    "requestlog": {},
+    "role": {
+      "id": 6
+    },
+    "securitylog": {},
+    "user": {
+      "id": 2
+    },
+    "role_users__user_roles": {
+      "id": 4
+    }
+  }
+}
