@@ -28,6 +28,11 @@ module.exports = {
         collection : 'grupo',
         via : 'alumnos'
     },
+
+    terminos: {
+        collection: 'termino',
+        via: 'alumnos'
+    }
   }
 };
 
