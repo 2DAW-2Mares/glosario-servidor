@@ -90,7 +90,7 @@
           "id": 3
       },
       {
-          "terminos": [2],
+          "terminos": [1,2],
           "grupo": {
               "anyo": "2015/16",
               "grupo": "2DAW",
@@ -108,7 +108,7 @@
           "id": 4
       },
       {
-          "terminos": [1],
+          "terminos": [],
           "grupo": {
               "anyo": "2015/16",
               "grupo": "1DAW",

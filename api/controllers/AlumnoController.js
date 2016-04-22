@@ -10,7 +10,7 @@ module.exports = {
 	load: function(req, res, next) {
 		Alumno.findOne({
 			where: { id: Number(req.params.alumnoId)}
-		}).then(function(alumno){
+		}).populate('terminos').then(function(alumno){
 			if(alumno) {
 				req.alumno = alumno;
 				next();
@@ -19,14 +19,8 @@ module.exports = {
 	},
 	
 	ultimos: function(req, res, next){
-		Termino.find({
-			where: {alumnos: req.alumno}
-		}).then(function(terminos){
-			console.log(terminos)
-			terminos.forEach(function(termino){
-				res.send(termino);
-			})
-		})
+		var terminos = req.alumno.terminos;
+		res.send(terminos.reverse());
 	}
 };
 
