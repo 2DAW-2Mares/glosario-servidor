@@ -15,6 +15,10 @@ module.exports = {
   		collection: 'definicion',
   		via:'termino'
   	},
+  	
+  	materia: {
+  		model: 'materia'
+  	},
 
   	alumnos:{
   		collection: 'alumno',

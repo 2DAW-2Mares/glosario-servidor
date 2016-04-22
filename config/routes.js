@@ -45,8 +45,14 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  'GET r|^/alumno/(\\d+)/ultimos$|alumnoId' : [
+  'GET r|^/alumno/(\\d+)/consultar/ultimos$|alumnoId' : [
     'AlumnoController.load',
     'AlumnoController.ultimos'
+  ],
+
+  'GET r|^/alumno/(\\d+)/consultar/materia/(\\d+)$|alumnoId,materiaId' : [
+    'AlumnoController.load',
+    'MateriaController.load',
+    'AlumnoController.materias'
   ],
 };

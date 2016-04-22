@@ -21,6 +21,15 @@ module.exports = {
 	ultimos: function(req, res, next){
 		var terminos = req.alumno.terminos;
 		res.send(terminos.reverse());
+	},
+
+	materias: function(req, res, next){
+		//console.log(req.materia);
+		Termino.find({
+			where: {materia: req.materia.id}
+		}).then(function(terminos){
+			res.send(terminos);
+		})
 	}
 };
 

@@ -1,12 +1,38 @@
   
   [
   {
+    "model":"materia",
+    "items":[
+              {
+                  "codigo": "LEN",
+                  "ensenanza":"Legua Castellana",
+                  "curso": "2DAW",
+                  "materia": "Lengua",
+                  "id": 1
+              },
+              {
+                  "codigo": "MAT",
+                  "ensenanza":"Matematicas Aplicadas",
+                  "curso": "2DAW",
+                  "materia": "Matematicas",
+                  "id": 2
+              },
+              {
+                  "codigo": "HIS",
+                  "ensenanza":"Historia de España",
+                  "curso": "2DAW",
+                  "materia": "Historia",
+                  "id": 3
+              }
+    ]   
+  },
+  {
     "model":"termino",
     "items":[
       {
           "definiciones": [
               {
-                  "definicion": "definicion de prueba",
+                  "definicion": "definicion de prueba 1",
                   "termino": 1,
                   "id": 2
               },
@@ -18,11 +44,13 @@
           ],
           "alumnos": [],
           "nombre": "prueba1",
+          "materia": 1,
           "id": 1
       },
       {
           "alumnos": [],
           "nombre": "prueba2",
+          "materia": 2,
           "id": 2
       }
     ]   
