@@ -55,4 +55,9 @@ module.exports.routes = {
     'MateriaController.load',
     'AlumnoController.materias'
   ],
+
+  'POST r|^/alumno/(\\d+)/consultar/search$|alumnoId' : [
+    'AlumnoController.load',
+    'AlumnoController.busquedaDirecta'
+  ],
 };

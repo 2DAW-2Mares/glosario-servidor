@@ -30,6 +30,20 @@ module.exports = {
 		}).then(function(terminos){
 			res.send(terminos);
 		})
+	},
+
+	busquedaDirecta: function(req, res, next){
+		var busqueda = req.body.answered;
+		Termino.findOne({
+			where: {nombre: busqueda}
+		}).then(function(termino){
+			if(termino){
+				res.send(termino);
+			}else{
+				res.send("Ningun termino encontrado!");
+			}
+			
+		})
 	}
 };
 
