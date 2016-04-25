@@ -56,8 +56,20 @@ module.exports.routes = {
     'AlumnoController.materias'
   ],
 
+  'GET r|^/alumno/(\\d+)/terminos/(\\d+)/definiciones$|alumnoId,terminoId' : [
+    'AlumnoController.load',
+    'TerminoController.load',
+    'AlumnoController.definiciones'
+  ],
+
   'POST r|^/alumno/(\\d+)/consultar/search$|alumnoId' : [
     'AlumnoController.load',
     'AlumnoController.busquedaDirecta'
+  ],
+
+  'POST r|^/alumno/(\\d+)/terminos/(\\d+)/agregar$|alumnoId,terminoId' : [
+    'AlumnoController.load',
+    'TerminoController.load',
+    'AlumnoController.añadir'
   ],
 };

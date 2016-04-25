@@ -42,8 +42,36 @@ module.exports = {
 			}else{
 				res.send("Ningun termino encontrado!");
 			}
-			
+		})
+	},
+
+	añadir: function(req, res, next){
+		var definicion = req.body.answered;
+		Termino.findOne({
+			where: {id: req.termino.id}
+		}).then(function(termino){
+			if(termino){
+				Definicion.create({definicion: definicion, termino: req.termino.id, alumno: req.alumno.id})
+				.exec(function createdCB(err, created){
+					res.json(created);
+				})
+			}
+		})
+	},
+
+	definiciones: function(req, res, next){
+		Definicion.find({
+			where: {termino: req.termino.id, alumno: req.alumno.id}
+		}).then(function(definiciones){
+			sails.log.verbose(req.termino.id+" Alumno :"+req.alumno.id);
+			console.log(definiciones);
+			if(definiciones){
+				res.send(definiciones);
+			}else{
+				res.send("No se enontraron definiciones!");
+			}
 		})
 	}
+
 };
 

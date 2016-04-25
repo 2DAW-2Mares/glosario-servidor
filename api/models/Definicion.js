@@ -16,6 +16,10 @@ module.exports = {
   		termino:{
   			model: 'termino'
   		},
+
+  		alumno:{
+  			model: 'alumno'
+  		}
   }
 };
 

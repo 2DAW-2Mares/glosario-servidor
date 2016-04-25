@@ -27,27 +27,40 @@
     ]   
   },
   {
-    "model":"termino",
+    "model":"definicion",
     "items":[
-      {
-          "definiciones": [
               {
                   "definicion": "definicion de prueba 1",
                   "termino": 1,
-                  "id": 2
+                  "alumno": 4,
+                  "id": 1
+              },
+              {
+                  "definicion": "definicion de prueba 3",
+                  "termino": 1,
+                  "alumno": 4,
+                  "id": 3
               },
               {
                   "definicion": "definicion de prueba 2",
                   "termino": 2,
-                  "id": 3
+                  "alumno": 4,
+                  "id": 2
               }
-          ],
+    ]   
+  },
+  {
+    "model":"termino",
+    "items":[
+      {
+          "definiciones": [],
           "alumnos": [],
           "nombre": "prueba1",
           "materia": 1,
           "id": 1
       },
       {
+          "definiciones": [],
           "alumnos": [],
           "nombre": "prueba2",
           "materia": 2,
