@@ -36,16 +36,16 @@
                   "id": 1
               },
               {
-                  "definicion": "definicion de prueba 3",
-                  "termino": 1,
-                  "alumno": 4,
-                  "id": 3
-              },
-              {
                   "definicion": "definicion de prueba 2",
                   "termino": 2,
                   "alumno": 4,
                   "id": 2
+              },
+              {
+                  "definicion": "definicion de prueba 3",
+                  "termino": 1,
+                  "alumno": 4,
+                  "id": 3
               }
     ]   
   },

@@ -19,7 +19,11 @@ exports.create = function () {
 			    PermissionService.grant({ role: 'profesor', model: 'Definicion', action: 'delete', relation: 'owner'}), 
 			    PermissionService.grant({ role: 'profesor', model: 'Definicion', action: 'update'}), 
 			    PermissionService.grant({ role: 'alumno', model: 'Termino', action: 'read'}), 
-			    PermissionService.grant({ role: 'alumno', model: 'Definicion', action: 'read'})
+			    PermissionService.grant({ role: 'alumno', model: 'Termino', action: 'create'}), 
+			    PermissionService.grant({ role: 'alumno', model: 'Termino', action: 'update'}), 
+			    PermissionService.grant({ role: 'alumno', model: 'Definicion', action: 'read'}),
+			    PermissionService.grant({ role: 'alumno', model: 'Definicion', action: 'create'}),
+			    PermissionService.grant({ role: 'alumno', model: 'Definicion', action: 'update'})
 		  ])
 	  })
 };

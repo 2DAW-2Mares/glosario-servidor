@@ -6,6 +6,16 @@
  */
 
 module.exports = {
+
+	listarAlumnos: function(req, res, next){
+		Alumno.find()
+		.then(function(alumnos){
+			console.log(alumnos.definiciones);
+			if(alumnos.definiciones != null){
+				console.log(alumnos);
+			}
+		})
+	}
 	
 };
 

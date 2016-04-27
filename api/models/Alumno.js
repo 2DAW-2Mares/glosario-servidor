@@ -32,7 +32,8 @@ module.exports = {
     terminos: {
         collection: 'termino',
         via: 'alumnos'
-    }
+    },
+
   }
 };
 

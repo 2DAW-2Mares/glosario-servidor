@@ -45,31 +45,26 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  'GET r|^/alumno/(\\d+)/consultar/ultimos$|alumnoId' : [
-    'AlumnoController.load',
-    'AlumnoController.ultimos'
+  'GET /ultimos' : [
+    'TerminoController.ultimos'
   ],
 
-  'GET r|^/alumno/(\\d+)/consultar/materia/(\\d+)$|alumnoId,materiaId' : [
-    'AlumnoController.load',
+  'GET r|^/materia/(\\d+)/ultimos$|materiaId' : [
     'MateriaController.load',
-    'AlumnoController.materias'
+    'TerminoController.ultimoMaterias'
   ],
 
-  'GET r|^/alumno/(\\d+)/terminos/(\\d+)/definiciones$|alumnoId,terminoId' : [
-    'AlumnoController.load',
+  'GET r|^/termino/(\\d+)/definiciones$|terminoId' : [
     'TerminoController.load',
-    'AlumnoController.definiciones'
+    'TerminoController.definiciones'
   ],
 
-  'POST r|^/alumno/(\\d+)/consultar/search$|alumnoId' : [
-    'AlumnoController.load',
-    'AlumnoController.busquedaDirecta'
+  'POST /search' : [
+    'TerminoController.busquedaDirecta'
   ],
 
-  'POST r|^/alumno/(\\d+)/terminos/(\\d+)/agregar$|alumnoId,terminoId' : [
-    'AlumnoController.load',
+  'POST r|^/termino/(\\d+)/agregar$|terminoId' : [
     'TerminoController.load',
-    'AlumnoController.añadir'
+    'TerminoController.añadir'
   ],
 };
