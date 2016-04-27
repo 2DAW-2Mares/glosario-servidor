@@ -49,6 +49,10 @@ module.exports.routes = {
     'TerminoController.ultimos'
   ],
 
+  'GET /listarAlumnos' : [
+    'ProfesorController.listarAlumnos'
+  ],
+
   'GET r|^/materia/(\\d+)/ultimos$|materiaId' : [
     'MateriaController.load',
     'TerminoController.ultimoMaterias'
