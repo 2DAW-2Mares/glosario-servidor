@@ -34,6 +34,12 @@ module.exports = {
         via: 'alumnos'
     },
 
+    definiciones: {
+        collection: 'definicion',
+        via: 'alumno'
+    },
+
+
   }
 };
 

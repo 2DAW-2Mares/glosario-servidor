@@ -32,13 +32,13 @@ module.exports = {
 				}).then(function(definiciones){
 					numeroDefiniciones = definiciones.length;
 					ndefinicion = numeroDefiniciones;
-					console.log(numeroDefiniciones);
+					console.log(numeroDefiniciones);	
 				})
 				definicionesTotales = {
 					'definiciones': ndefinicion,
 					'alumno': alumno.nombre
 				}
-				console.log(numeroDefiniciones);
+
 				dFinal.push(definicionesTotales);
 				
 			})

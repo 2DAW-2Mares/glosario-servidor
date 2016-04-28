@@ -47,21 +47,32 @@ module.exports = {
 			if(termino){
 				res.send(termino);
 			}else{
-				res.send("Ningun termino encontrado!");
+				res.send("Ningun termino encontrado con ese nombre!");
 			}
 		})
 	},
 
 	añadir: function(req, res, next){
 		var definicion = req.body.answered;
-		//console.log(req.session);
+		console.log(req.session);
 		Termino.findOne({
 			where: {id: req.termino.id}
 		}).then(function(termino){
 			if(termino){
-				Definicion.create({definicion: definicion, termino: req.termino.id, alumno: req.session.passport.user})
-				.exec(function createdCB(err, created){
-					res.json(created);
+				Alumno.findOne({
+					where: {user: req.session.passport.user}
+				}).then(function(alumno){
+					if(alumno){
+						Definicion.create({definicion: definicion, termino: req.termino.id, alumno: alumno.id})
+						.exec(function createdCB(err, created){
+							if(err){
+								next(new Error(err));
+							}else{
+								console.log(created);
+								res.json(created);
+							}
+						}).catch(function(error){next(error);});
+					}
 				})
 			}
 		})

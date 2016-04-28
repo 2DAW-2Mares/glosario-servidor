@@ -65,6 +65,13 @@
           "nombre": "prueba2",
           "materia": 2,
           "id": 2
+      },
+      {
+          "definiciones": [],
+          "alumnos": [],
+          "nombre": "prueba3",
+          "materia": 1,
+          "id": 3
       }
     ]   
   },
@@ -144,7 +151,7 @@
           "apellido1": "alumno3ap1",
           "apellido2": "alumno3ap2",
           "nombre": "alumno3nombre",
-          "email": "email3@murciaeduca.es",
+          "email": "3210148@alu.murciaeduca.es",
           "fechaNac": "2000-01-03T00:00:00.000Z",
           "id": 4
       },
