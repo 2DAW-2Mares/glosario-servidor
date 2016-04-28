@@ -31,18 +31,21 @@
     "items":[
               {
                   "definicion": "definicion de prueba 1",
+                  "denunciado": false,
                   "termino": 1,
                   "alumno": 4,
                   "id": 1
               },
               {
                   "definicion": "definicion de prueba 2",
+                  "denunciado": false,
                   "termino": 2,
                   "alumno": 4,
                   "id": 2
               },
               {
                   "definicion": "definicion de prueba 3",
+                  "denunciado": false,
                   "termino": 1,
                   "alumno": 4,
                   "id": 3

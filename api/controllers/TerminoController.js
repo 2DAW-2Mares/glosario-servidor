@@ -80,7 +80,7 @@ module.exports = {
 
 	definiciones: function(req, res, next){
 		Definicion.find({
-			where: {termino: req.termino.id/*, alumno: req.session.passport.user*/}
+			where: {termino: req.termino.id, denunciado: false/*, alumno: req.session.passport.user*/}
 		}).then(function(definiciones){
 			if(definiciones){
 				res.send(definiciones);

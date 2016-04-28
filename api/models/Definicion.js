@@ -13,6 +13,10 @@ module.exports = {
   			required: true
   		},
 
+      denunciado: {
+        type: 'boolean'
+      },
+
   		valoraciones:{
   			collection: 'valoracion',
   			via: 'definicion'
