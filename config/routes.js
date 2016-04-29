@@ -68,12 +68,12 @@ module.exports.routes = {
     'DefinicionController.denunciar'
   ],
 
-  'POST /search' : [
+  'GET /search/:nombre' : [
     'TerminoController.busquedaDirecta'
   ],
 
   'POST r|^/termino/(\\d+)/agregar$|terminoId' : [
     'TerminoController.load',
-    'TerminoController.añadir'
+    'TerminoController.anyadir'
   ],
 };

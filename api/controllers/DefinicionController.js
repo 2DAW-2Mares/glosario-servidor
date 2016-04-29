@@ -19,18 +19,13 @@ module.exports = {
 	},
 
 	denunciar: function(req, res, next){
-		Definicion.findOne({
-			where: {id: req.definicion.id}
-		}).then(function(definicion){
-			Definicion.update({id: req.definicion.id}, {denunciado: true}).exec(function updatedCB(err, updated){
-				if(err){
-					next(new Error(err));
-				}else{
-					console.log(updated);
-					res.json(updated);
-				}
-			})
-		})
+		var definicion = req.definicion;
+		definicion.denunciado = true;
+		definicion.save(function(err, s){
+			if(!err){
+				res.json('definicion denunciada correctamente');
+			}
+		});
 	}
 	
 };

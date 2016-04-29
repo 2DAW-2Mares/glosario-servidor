@@ -19,9 +19,9 @@ module.exports = {
 	},
 
 	ultimos: function(req, res, next){
-		Termino.find().then(function(terminos){
+		Termino.find().sort('id DESC').limit(5).then(function(terminos){
 			if(terminos){
-				res.send(terminos.reverse());
+				res.json(terminos);
 			}
 		})
 	},
@@ -30,9 +30,9 @@ module.exports = {
 		//console.log(req.materia);
 		Termino.find({
 			where: {materia: req.materia.id}
-		}).then(function(terminos){
+		}).sort('id DESC').limit(5).then(function(terminos){
 			if(terminos){
-				res.send(terminos);
+				res.json(terminos);
 			}
 			
 		})
@@ -40,38 +40,32 @@ module.exports = {
 
 
 	busquedaDirecta: function(req, res, next){
-		var busqueda = req.body.answered;
+		var busqueda = req.param('nombre');
 		Termino.findOne({
 			where: {nombre: busqueda}
 		}).then(function(termino){
 			if(termino){
-				res.send(termino);
+				res.json(termino);
 			}else{
 				res.send("Ningun termino encontrado con ese nombre!");
 			}
 		})
 	},
 
-	añadir: function(req, res, next){
-		var definicion = req.body.answered;
+	anyadir: function(req, res, next){
+		var definicion = req.body.definicion;
 		console.log(req.session);
-		Termino.findOne({
-			where: {id: req.termino.id}
-		}).then(function(termino){
-			if(termino){
-				Alumno.findOne({
-					where: {user: req.session.passport.user}
-				}).then(function(alumno){
-					if(alumno){
-						Definicion.create({definicion: definicion, termino: req.termino.id, alumno: alumno.id})
-						.exec(function createdCB(err, created){
-							if(err){
-								next(new Error(err));
-							}else{
-								console.log(created);
-								res.json(created);
-							}
-						}).catch(function(error){next(error);});
+		Alumno.findOne({
+			where: {user: req.session.passport.user}
+		}).then(function(alumno){
+			if(alumno){
+				Definicion.create({definicion: definicion, termino: req.termino.id, alumno: alumno.id})
+				.exec(function createdCB(err, created){
+					if(err){
+						next(new Error(err));
+					}else{
+						console.log(created);
+						res.json(created);
 					}
 				})
 			}
