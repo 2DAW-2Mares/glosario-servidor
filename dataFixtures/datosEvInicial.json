@@ -106,7 +106,7 @@
     "items":[
       {
           "terminos": [],
-          "grupo": {
+          "grupos": {
               "anyo": "2015/16",
               "grupo": "2DAW",
               "subgrupo": "2DAWO",
@@ -124,7 +124,7 @@
       },
       {
           "terminos": [],
-          "grupo": {
+          "grupos": {
               "anyo": "2015/16",
               "grupo": "2DAW",
               "subgrupo": "2DAWO",
@@ -142,7 +142,7 @@
       },
       {
           "terminos": [1,2],
-          "grupo": {
+          "grupos": {
               "anyo": "2015/16",
               "grupo": "2DAW",
               "subgrupo": "2DAWO",
@@ -160,7 +160,7 @@
       },
       {
           "terminos": [],
-          "grupo": {
+          "grupos": {
               "anyo": "2015/16",
               "grupo": "1DAW",
               "subgrupo": "1DAWO",

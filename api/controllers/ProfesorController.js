@@ -19,31 +19,37 @@ module.exports = {
 	},
 
 	listarAlumnos: function(req, res, next){
-		var numeroDefiniciones = 0;
-		var ndefinicion = 0;
-		definicionesTotales = {};
-		dFinal = [];
-		Alumno.find()
-		.then(function(alumnos){
-			//console.log(alumnos);
-			alumnos.forEach(function(alumno){
-				Definicion.find({
-					where: {alumno: alumno.id}
-				}).then(function(definiciones){
-					numeroDefiniciones = definiciones.length;
-					ndefinicion = numeroDefiniciones;
-					console.log(numeroDefiniciones);	
-				})
-				definicionesTotales = {
-					'definiciones': ndefinicion,
-					'alumno': alumno.nombre
+		var Dfinal = [];
+		req.grupo.alumnos.forEach(function(alumno){
+			var ob = alumno.toJSON();
+			Definicion.count({alumno: alumno.id}).exec(function cb(err, found){
+				if(!err){
+					ob['TotalDefiniciones'] = found;
+					Dfinal.push(ob);
+					//console.log(ob);
 				}
+			})
+			//Dfinal.push(ob);
+			console.log(ob);
+			//console.log('Array Final'+Dfinal);
+		})
+		res.json(Dfinal);
 
-				dFinal.push(definicionesTotales);
+		/*
+		var ob = {}
+		for(var i = 0; i < req.grupo.alumnos.length; i++){
+			
+			Definicion.count({alumno: req.grupo.alumnos[i].id}).exec(function cbfound(err, found){
+				if(!err){
+					ob += req.grupo.alumnos[i];
+					ob['TotalDefiniciones'] = found;
+				}
 				
 			})
-			res.json(dFinal);
-		})
+			Dfinal[i] = ob;
+		}
+		res.json(Dfinal);
+		*/
 	}
 	
 };
