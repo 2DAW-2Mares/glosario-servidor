@@ -17,6 +17,18 @@ exports.create = function () {
 				permisosAlumno.push(permiso);
 			})
 		})
+
+		var actionsProfesor = ['read', 'create', 'delete', 'update'];
+		var modelosProfesor = ['Termino', 'Definicion', 'Grupo'];
+		var permisosProfesor = [];
+
+		actionsProfesor.forEach(function(action){
+			modelosProfesor.forEach(function(modeloProfesor){
+				permiso = {role: 'Profesor', model: modeloProfesor, action: action};
+				if (action == 'delete') {permiso.relation = 'owner'};
+				permisosProfesor.push(permiso);
+			})
+		})
 		//sails.log.verbose(permisosProfesor);
 
 	  return Promise.all([
@@ -25,15 +37,7 @@ exports.create = function () {
 	  ]).then(function(role){
 	  		return Promise.all([
 	  			PermissionService.grant(permisosAlumno),
-			    PermissionService.grant({ role: 'profesor', model: 'Termino', action: 'read'}), 
-			    PermissionService.grant({ role: 'profesor', model: 'Termino', action: 'create'}), 
-			    PermissionService.grant({ role: 'profesor', model: 'Termino', action: 'delete', relation: 'owner'}), 
-			    PermissionService.grant({ role: 'profesor', model: 'Termino', action: 'update'}), 
-			    PermissionService.grant({ role: 'profesor', model: 'Definicion', action: 'read'}), 
-			    PermissionService.grant({ role: 'profesor', model: 'Definicion', action: 'create'}), 
-			    PermissionService.grant({ role: 'profesor', model: 'Definicion', action: 'delete', relation: 'owner'}), 
-			    PermissionService.grant({ role: 'profesor', model: 'Definicion', action: 'update'}), 
-			   
+			    PermissionService.grant(permisosProfesor), 
 		  ])
 	  })
 };

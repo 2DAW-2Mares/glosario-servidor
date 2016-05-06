@@ -63,5 +63,14 @@ module.exports.policies = {
 
   AuthController: {
     '*': [ 'passport' ]
+  },
+
+  ProfesorController: {
+    'listarAlumnos': ['sessionAuth']
+  },
+
+  GrupoController: {
+    'load': ['sessionAuth']
   }
+
 };
