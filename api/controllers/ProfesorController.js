@@ -19,22 +19,25 @@ module.exports = {
 	},
 
 	listarAlumnos: function(req, res, next){
-		var Dfinal = [];
-		req.grupo.alumnos.forEach(function(alumno){
-			var ob = alumno.toJSON();
-			Definicion.count({alumno: alumno.id}).exec(function cb(err, found){
-				if(!err){
-					ob['TotalDefiniciones'] = found;
-					Dfinal.push(ob);
-					//console.log(ob);
-				}
-			})
-			//Dfinal.push(ob);
-			console.log(ob);
-			//console.log('Array Final'+Dfinal);
-		})
-		res.json(Dfinal);
+		var promesas = [];
+        var Dfinal = [];
+        req.grupo.alumnos.forEach(function(alumno){
+            
+            promesas.push(Definicion.count({alumno: alumno.id}))
+        });
 
+        Promise.all(promesas).then(function(countDefiniciones){
+                if(countDefiniciones){
+                        countDefiniciones.forEach(function(countDefinicion){
+                        alumno = req.grupo.alumnos.pop();
+                        ob = alumno.toJSON();
+                        ob['TotalDefiniciones'] = countDefinicion;
+                        Dfinal.push(ob);
+                        //console.log(ob);
+                    });
+                    res.json(Dfinal);
+                }
+            })
 		/*
 		var ob = {}
 		for(var i = 0; i < req.grupo.alumnos.length; i++){
