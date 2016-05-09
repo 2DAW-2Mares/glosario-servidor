@@ -69,6 +69,11 @@ module.exports.routes = {
     'DefinicionController.denunciar'
   ],
 
+  'POST r|^/definicion/(\\d+)/valorar$|definicionId' : [
+    'DefinicionController.load',
+    'DefinicionController.valorar'
+  ],
+
   'GET /search/:nombre' : [
     'TerminoController.busquedaDirecta'
   ],

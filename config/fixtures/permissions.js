@@ -7,7 +7,7 @@ exports.create = function () {
 
 
 		var actions = ['read', 'create', 'delete', 'update'];
-		var modelosAlumno = ['Termino', 'Definicion', 'Materia'];
+		var modelosAlumno = ['Termino', 'Definicion', 'Materia', 'Valoracion'];
 		var permisosAlumno = [];
 
 		actions.forEach(function(action){
