@@ -22,6 +22,13 @@ module.exports = {
   		definicion: {
   			model: 'definicion'
   		}
-  }
+  },
+  indexes:[
+    //a composite index
+    {
+       attributes:  ['usuario', 'definicion'],
+       unique: true
+    }
+  ]
 };
 

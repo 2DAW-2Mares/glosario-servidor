@@ -41,9 +41,9 @@ module.exports = {
 
 	busquedaDirecta: function(req, res, next){
 		var busqueda = req.param('nombre');
-		Termino.findOne({
-			where: {nombre: busqueda}
-		}).then(function(termino){
+		Termino.find(
+			{nombre: {'contains' : busqueda}}
+		).then(function(termino){
 			if(termino){
 				res.json(termino);
 			}else{
