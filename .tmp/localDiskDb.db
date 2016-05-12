@@ -21,8 +21,8 @@
         "email": "email1@murciaeduca.es",
         "fechaNac": "2000-01-01T00:00:00.000Z",
         "id": 2,
-        "createdAt": "2016-05-12T07:52:55.291Z",
-        "updatedAt": "2016-05-12T07:52:55.304Z"
+        "createdAt": "2016-05-12T15:15:04.548Z",
+        "updatedAt": "2016-05-12T15:15:04.567Z"
       },
       {
         "dni": "12345678B",
@@ -32,20 +32,19 @@
         "email": "email2@murciaeduca.es",
         "fechaNac": "2000-01-02T00:00:00.000Z",
         "id": 3,
-        "createdAt": "2016-05-12T07:52:55.330Z",
-        "updatedAt": "2016-05-12T07:52:55.344Z"
+        "createdAt": "2016-05-12T15:15:04.607Z",
+        "updatedAt": "2016-05-12T15:15:04.624Z"
       },
       {
         "dni": "12345678C",
         "apellido1": "alumno3ap1",
         "apellido2": "alumno3ap2",
         "nombre": "alumno3nombre",
-        "email": "alberto.sierra@murciaeduca.es",
+        "email": "3210148@alu.murciaeduca.es",
         "fechaNac": "2000-01-03T00:00:00.000Z",
         "id": 4,
-        "createdAt": "2016-05-12T07:52:55.372Z",
-        "updatedAt": "2016-05-12T07:53:09.407Z",
-        "user": 269
+        "createdAt": "2016-05-12T15:15:04.674Z",
+        "updatedAt": "2016-05-12T15:15:04.692Z"
       },
       {
         "dni": "12345678D",
@@ -55,8 +54,8 @@
         "email": "alumno@alu.murciaeduca.es",
         "fechaNac": "2000-01-04T00:00:00.000Z",
         "id": 5,
-        "createdAt": "2016-05-12T07:52:55.434Z",
-        "updatedAt": "2016-05-12T07:52:55.445Z"
+        "createdAt": "2016-05-12T15:15:04.761Z",
+        "updatedAt": "2016-05-12T15:15:04.775Z"
       }
     ],
     "criteria": [],
@@ -67,8 +66,8 @@
         "termino": 1,
         "alumno": 4,
         "id": 1,
-        "createdAt": "2016-05-12T07:52:55.132Z",
-        "updatedAt": "2016-05-12T07:52:55.132Z"
+        "createdAt": "2016-05-12T15:15:04.318Z",
+        "updatedAt": "2016-05-12T15:15:04.318Z"
       },
       {
         "definicion": "definicion de prueba 2",
@@ -76,8 +75,8 @@
         "termino": 2,
         "alumno": 4,
         "id": 2,
-        "createdAt": "2016-05-12T07:52:55.141Z",
-        "updatedAt": "2016-05-12T07:52:55.141Z"
+        "createdAt": "2016-05-12T15:15:04.338Z",
+        "updatedAt": "2016-05-12T15:15:04.338Z"
       },
       {
         "definicion": "definicion de prueba 3",
@@ -85,8 +84,8 @@
         "termino": 1,
         "alumno": 4,
         "id": 3,
-        "createdAt": "2016-05-12T07:52:55.153Z",
-        "updatedAt": "2016-05-12T07:52:55.153Z"
+        "createdAt": "2016-05-12T15:15:04.355Z",
+        "updatedAt": "2016-05-12T15:15:04.355Z"
       }
     ],
     "grupo": [
@@ -97,8 +96,8 @@
         "ensenyanza": "Desarrollo de Aplicaciones Web",
         "curso": "2",
         "id": 1,
-        "createdAt": "2016-05-12T07:52:55.238Z",
-        "updatedAt": "2016-05-12T07:52:55.248Z"
+        "createdAt": "2016-05-12T15:15:04.480Z",
+        "updatedAt": "2016-05-12T15:15:04.495Z"
       },
       {
         "anyo": "2015/16",
@@ -107,10 +106,11 @@
         "ensenyanza": "Desarrollo de Aplicaciones Web",
         "curso": "1",
         "id": 2,
-        "createdAt": "2016-05-12T07:52:55.265Z",
-        "updatedAt": "2016-05-12T07:52:55.275Z"
+        "createdAt": "2016-05-12T15:15:04.512Z",
+        "updatedAt": "2016-05-12T15:15:04.527Z"
       }
     ],
+    "juego": [],
     "materia": [
       {
         "codigo": "LEN",
@@ -118,8 +118,8 @@
         "curso": "2DAW",
         "materia": "Lengua",
         "id": 1,
-        "createdAt": "2016-05-12T07:52:55.095Z",
-        "updatedAt": "2016-05-12T07:52:55.095Z"
+        "createdAt": "2016-05-12T15:15:04.234Z",
+        "updatedAt": "2016-05-12T15:15:04.234Z"
       },
       {
         "codigo": "MAT",
@@ -127,8 +127,8 @@
         "curso": "2DAW",
         "materia": "Matematicas",
         "id": 2,
-        "createdAt": "2016-05-12T07:52:55.110Z",
-        "updatedAt": "2016-05-12T07:52:55.110Z"
+        "createdAt": "2016-05-12T15:15:04.255Z",
+        "updatedAt": "2016-05-12T15:15:04.255Z"
       },
       {
         "codigo": "HIS",
@@ -136,8 +136,8 @@
         "curso": "2DAW",
         "materia": "Historia",
         "id": 3,
-        "createdAt": "2016-05-12T07:52:55.121Z",
-        "updatedAt": "2016-05-12T07:52:55.121Z"
+        "createdAt": "2016-05-12T15:15:04.285Z",
+        "updatedAt": "2016-05-12T15:15:04.285Z"
       }
     ],
     "materiaimpartida": [],
@@ -211,7 +211,7 @@
             "default": "NOW"
           }
         },
-        "id": 2954
+        "id": 3050
       },
       {
         "name": "Definicion",
@@ -257,7 +257,7 @@
             "default": "NOW"
           }
         },
-        "id": 2955
+        "id": 3051
       },
       {
         "name": "Grupo",
@@ -313,7 +313,42 @@
             "default": "NOW"
           }
         },
-        "id": 2956
+        "id": 3052
+      },
+      {
+        "name": "Juego",
+        "identity": "juego",
+        "attributes": {
+          "posicionJuego": {
+            "type": "integer"
+          },
+          "puntos": {
+            "type": "integer"
+          },
+          "createdBy": {
+            "model": "user",
+            "index": true
+          },
+          "owner": {
+            "model": "user",
+            "index": true
+          },
+          "id": {
+            "type": "integer",
+            "autoIncrement": true,
+            "primaryKey": true,
+            "unique": true
+          },
+          "createdAt": {
+            "type": "datetime",
+            "default": "NOW"
+          },
+          "updatedAt": {
+            "type": "datetime",
+            "default": "NOW"
+          }
+        },
+        "id": 3053
       },
       {
         "name": "Materia",
@@ -362,7 +397,7 @@
             "default": "NOW"
           }
         },
-        "id": 2957
+        "id": 3054
       },
       {
         "name": "MateriaImpartida",
@@ -400,7 +435,7 @@
             "default": "NOW"
           }
         },
-        "id": 2958
+        "id": 3055
       },
       {
         "name": "MateriaMatriculada",
@@ -442,7 +477,7 @@
             "default": "NOW"
           }
         },
-        "id": 2959
+        "id": 3056
       },
       {
         "name": "Model",
@@ -471,7 +506,7 @@
             "unique": true
           }
         },
-        "id": 2960
+        "id": 3057
       },
       {
         "name": "Permission",
@@ -527,7 +562,7 @@
             "default": "NOW"
           }
         },
-        "id": 2961
+        "id": 3058
       },
       {
         "name": "Profesor",
@@ -575,7 +610,7 @@
             "default": "NOW"
           }
         },
-        "id": 2962
+        "id": 3059
       },
       {
         "name": "Role",
@@ -615,7 +650,7 @@
             "default": "NOW"
           }
         },
-        "id": 2963
+        "id": 3060
       },
       {
         "name": "Termino",
@@ -660,7 +695,7 @@
             "default": "NOW"
           }
         },
-        "id": 2964
+        "id": 3061
       },
       {
         "name": "User",
@@ -714,7 +749,7 @@
             "default": "NOW"
           }
         },
-        "id": 2965
+        "id": 3062
       },
       {
         "name": "Valoracion",
@@ -761,787 +796,811 @@
             "default": "NOW"
           }
         },
-        "id": 2966
+        "id": 3063
       }
     ],
     "passport": [
       {
         "protocol": "local",
-        "password": "$2a$08$z0DmfljX.DVJyPxjeOY/NeWfxq/MeSl6txkV.rshCLzjwId3MAs12",
-        "user": 268,
-        "createdAt": "2016-05-12T07:52:51.380Z",
-        "updatedAt": "2016-05-12T07:52:51.380Z",
-        "id": 265
-      },
-      {
-        "identifier": "110133805125480109989",
-        "protocol": "oauth2",
-        "tokens": {
-          "accessToken": "ya29.CjXgAnm8Nb94EdROPEFGT5_X1VD58l2pzzCQABPHMsiuZftDJo6KLBMv314h_4Ja4Hjs4CQrpA"
-        },
-        "provider": "google",
-        "user": 269,
-        "createdAt": "2016-05-12T07:53:09.457Z",
-        "updatedAt": "2016-05-12T07:53:09.457Z",
-        "id": 266
+        "password": "$2a$08$f6ioGQTOvFlbeYhWvDetg.Qgil1yhyl1zUnDFkEXuG.bp7N6P6TRG",
+        "user": 276,
+        "createdAt": "2016-05-12T15:14:51.084Z",
+        "updatedAt": "2016-05-12T15:14:51.084Z",
+        "id": 273
       }
     ],
     "permission": [
       {
-        "model": 2954,
+        "model": 3050,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.597Z",
-        "updatedAt": "2016-05-12T07:52:51.597Z",
-        "id": 15487
+        "createdAt": "2016-05-12T15:14:51.446Z",
+        "updatedAt": "2016-05-12T15:14:51.446Z",
+        "id": 16095
       },
       {
-        "model": 2954,
+        "model": 3050,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.601Z",
-        "updatedAt": "2016-05-12T07:52:51.601Z",
-        "id": 15488
+        "createdAt": "2016-05-12T15:14:51.459Z",
+        "updatedAt": "2016-05-12T15:14:51.459Z",
+        "id": 16096
       },
       {
-        "model": 2954,
+        "model": 3050,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.607Z",
-        "updatedAt": "2016-05-12T07:52:51.607Z",
-        "id": 15489
+        "createdAt": "2016-05-12T15:14:51.468Z",
+        "updatedAt": "2016-05-12T15:14:51.468Z",
+        "id": 16097
       },
       {
-        "model": 2954,
+        "model": 3050,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.610Z",
-        "updatedAt": "2016-05-12T07:52:51.610Z",
-        "id": 15490
+        "createdAt": "2016-05-12T15:14:51.492Z",
+        "updatedAt": "2016-05-12T15:14:51.492Z",
+        "id": 16098
       },
       {
-        "model": 2955,
+        "model": 3051,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.616Z",
-        "updatedAt": "2016-05-12T07:52:51.616Z",
-        "id": 15491
+        "createdAt": "2016-05-12T15:14:51.516Z",
+        "updatedAt": "2016-05-12T15:14:51.516Z",
+        "id": 16099
       },
       {
-        "model": 2955,
+        "model": 3051,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.618Z",
-        "updatedAt": "2016-05-12T07:52:51.618Z",
-        "id": 15492
+        "createdAt": "2016-05-12T15:14:51.541Z",
+        "updatedAt": "2016-05-12T15:14:51.541Z",
+        "id": 16100
       },
       {
-        "model": 2955,
+        "model": 3051,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.623Z",
-        "updatedAt": "2016-05-12T07:52:51.623Z",
-        "id": 15493
+        "createdAt": "2016-05-12T15:14:51.559Z",
+        "updatedAt": "2016-05-12T15:14:51.559Z",
+        "id": 16101
       },
       {
-        "model": 2955,
+        "model": 3051,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.628Z",
-        "updatedAt": "2016-05-12T07:52:51.628Z",
-        "id": 15494
+        "createdAt": "2016-05-12T15:14:51.599Z",
+        "updatedAt": "2016-05-12T15:14:51.599Z",
+        "id": 16102
       },
       {
-        "model": 2956,
+        "model": 3052,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.635Z",
-        "updatedAt": "2016-05-12T07:52:51.635Z",
-        "id": 15495
+        "createdAt": "2016-05-12T15:14:51.609Z",
+        "updatedAt": "2016-05-12T15:14:51.609Z",
+        "id": 16103
       },
       {
-        "model": 2956,
+        "model": 3052,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.644Z",
-        "updatedAt": "2016-05-12T07:52:51.644Z",
-        "id": 15496
+        "createdAt": "2016-05-12T15:14:51.616Z",
+        "updatedAt": "2016-05-12T15:14:51.616Z",
+        "id": 16104
       },
       {
-        "model": 2956,
+        "model": 3052,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.647Z",
-        "updatedAt": "2016-05-12T07:52:51.647Z",
-        "id": 15497
+        "createdAt": "2016-05-12T15:14:51.623Z",
+        "updatedAt": "2016-05-12T15:14:51.623Z",
+        "id": 16105
       },
       {
-        "model": 2956,
+        "model": 3052,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.652Z",
-        "updatedAt": "2016-05-12T07:52:51.652Z",
-        "id": 15498
+        "createdAt": "2016-05-12T15:14:51.630Z",
+        "updatedAt": "2016-05-12T15:14:51.630Z",
+        "id": 16106
       },
       {
-        "model": 2957,
+        "model": 3053,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.656Z",
-        "updatedAt": "2016-05-12T07:52:51.656Z",
-        "id": 15499
+        "createdAt": "2016-05-12T15:14:51.637Z",
+        "updatedAt": "2016-05-12T15:14:51.637Z",
+        "id": 16107
       },
       {
-        "model": 2957,
+        "model": 3053,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.660Z",
-        "updatedAt": "2016-05-12T07:52:51.660Z",
-        "id": 15500
+        "createdAt": "2016-05-12T15:14:51.644Z",
+        "updatedAt": "2016-05-12T15:14:51.644Z",
+        "id": 16108
       },
       {
-        "model": 2957,
+        "model": 3053,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.664Z",
-        "updatedAt": "2016-05-12T07:52:51.664Z",
-        "id": 15501
+        "createdAt": "2016-05-12T15:14:51.653Z",
+        "updatedAt": "2016-05-12T15:14:51.653Z",
+        "id": 16109
       },
       {
-        "model": 2957,
+        "model": 3053,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.672Z",
-        "updatedAt": "2016-05-12T07:52:51.672Z",
-        "id": 15502
+        "createdAt": "2016-05-12T15:14:51.663Z",
+        "updatedAt": "2016-05-12T15:14:51.663Z",
+        "id": 16110
       },
       {
-        "model": 2958,
+        "model": 3054,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.676Z",
-        "updatedAt": "2016-05-12T07:52:51.676Z",
-        "id": 15503
+        "createdAt": "2016-05-12T15:14:51.672Z",
+        "updatedAt": "2016-05-12T15:14:51.672Z",
+        "id": 16111
       },
       {
-        "model": 2958,
+        "model": 3054,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.679Z",
-        "updatedAt": "2016-05-12T07:52:51.679Z",
-        "id": 15504
+        "createdAt": "2016-05-12T15:14:51.717Z",
+        "updatedAt": "2016-05-12T15:14:51.717Z",
+        "id": 16112
       },
       {
-        "model": 2958,
+        "model": 3054,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.684Z",
-        "updatedAt": "2016-05-12T07:52:51.684Z",
-        "id": 15505
+        "createdAt": "2016-05-12T15:14:51.727Z",
+        "updatedAt": "2016-05-12T15:14:51.727Z",
+        "id": 16113
       },
       {
-        "model": 2958,
+        "model": 3054,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.688Z",
-        "updatedAt": "2016-05-12T07:52:51.688Z",
-        "id": 15506
+        "createdAt": "2016-05-12T15:14:51.745Z",
+        "updatedAt": "2016-05-12T15:14:51.745Z",
+        "id": 16114
       },
       {
-        "model": 2959,
+        "model": 3055,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.696Z",
-        "updatedAt": "2016-05-12T07:52:51.696Z",
-        "id": 15507
+        "createdAt": "2016-05-12T15:14:51.764Z",
+        "updatedAt": "2016-05-12T15:14:51.764Z",
+        "id": 16115
       },
       {
-        "model": 2959,
+        "model": 3055,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.701Z",
-        "updatedAt": "2016-05-12T07:52:51.701Z",
-        "id": 15508
+        "createdAt": "2016-05-12T15:14:51.796Z",
+        "updatedAt": "2016-05-12T15:14:51.796Z",
+        "id": 16116
       },
       {
-        "model": 2959,
+        "model": 3055,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.717Z",
-        "updatedAt": "2016-05-12T07:52:51.717Z",
-        "id": 15509
+        "createdAt": "2016-05-12T15:14:51.825Z",
+        "updatedAt": "2016-05-12T15:14:51.825Z",
+        "id": 16117
       },
       {
-        "model": 2959,
+        "model": 3055,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.720Z",
-        "updatedAt": "2016-05-12T07:52:51.720Z",
-        "id": 15510
+        "createdAt": "2016-05-12T15:14:51.838Z",
+        "updatedAt": "2016-05-12T15:14:51.838Z",
+        "id": 16118
       },
       {
-        "model": 2960,
+        "model": 3056,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.725Z",
-        "updatedAt": "2016-05-12T07:52:51.725Z",
-        "id": 15511
+        "createdAt": "2016-05-12T15:14:51.851Z",
+        "updatedAt": "2016-05-12T15:14:51.851Z",
+        "id": 16119
       },
       {
-        "model": 2960,
+        "model": 3056,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.731Z",
-        "updatedAt": "2016-05-12T07:52:51.731Z",
-        "id": 15512
+        "createdAt": "2016-05-12T15:14:51.860Z",
+        "updatedAt": "2016-05-12T15:14:51.860Z",
+        "id": 16120
       },
       {
-        "model": 2960,
+        "model": 3056,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.734Z",
-        "updatedAt": "2016-05-12T07:52:51.734Z",
-        "id": 15513
+        "createdAt": "2016-05-12T15:14:51.869Z",
+        "updatedAt": "2016-05-12T15:14:51.869Z",
+        "id": 16121
       },
       {
-        "model": 2960,
+        "model": 3056,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.740Z",
-        "updatedAt": "2016-05-12T07:52:51.740Z",
-        "id": 15514
+        "createdAt": "2016-05-12T15:14:51.879Z",
+        "updatedAt": "2016-05-12T15:14:51.879Z",
+        "id": 16122
       },
       {
-        "model": 2961,
+        "model": 3057,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.744Z",
-        "updatedAt": "2016-05-12T07:52:51.744Z",
-        "id": 15515
+        "createdAt": "2016-05-12T15:14:51.887Z",
+        "updatedAt": "2016-05-12T15:14:51.887Z",
+        "id": 16123
       },
       {
-        "model": 2961,
+        "model": 3057,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.748Z",
-        "updatedAt": "2016-05-12T07:52:51.748Z",
-        "id": 15516
+        "createdAt": "2016-05-12T15:14:51.898Z",
+        "updatedAt": "2016-05-12T15:14:51.898Z",
+        "id": 16124
       },
       {
-        "model": 2961,
+        "model": 3057,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.756Z",
-        "updatedAt": "2016-05-12T07:52:51.756Z",
-        "id": 15517
+        "createdAt": "2016-05-12T15:14:51.906Z",
+        "updatedAt": "2016-05-12T15:14:51.906Z",
+        "id": 16125
       },
       {
-        "model": 2961,
+        "model": 3057,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.763Z",
-        "updatedAt": "2016-05-12T07:52:51.763Z",
-        "id": 15518
+        "createdAt": "2016-05-12T15:14:51.914Z",
+        "updatedAt": "2016-05-12T15:14:51.914Z",
+        "id": 16126
       },
       {
-        "model": 2962,
+        "model": 3058,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.766Z",
-        "updatedAt": "2016-05-12T07:52:51.766Z",
-        "id": 15519
+        "createdAt": "2016-05-12T15:14:51.922Z",
+        "updatedAt": "2016-05-12T15:14:51.922Z",
+        "id": 16127
       },
       {
-        "model": 2962,
+        "model": 3058,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.771Z",
-        "updatedAt": "2016-05-12T07:52:51.771Z",
-        "id": 15520
+        "createdAt": "2016-05-12T15:14:51.929Z",
+        "updatedAt": "2016-05-12T15:14:51.929Z",
+        "id": 16128
       },
       {
-        "model": 2962,
+        "model": 3058,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.776Z",
-        "updatedAt": "2016-05-12T07:52:51.776Z",
-        "id": 15521
+        "createdAt": "2016-05-12T15:14:51.937Z",
+        "updatedAt": "2016-05-12T15:14:51.937Z",
+        "id": 16129
       },
       {
-        "model": 2962,
+        "model": 3058,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.780Z",
-        "updatedAt": "2016-05-12T07:52:51.780Z",
-        "id": 15522
+        "createdAt": "2016-05-12T15:14:51.945Z",
+        "updatedAt": "2016-05-12T15:14:51.945Z",
+        "id": 16130
       },
       {
-        "model": 2963,
+        "model": 3059,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.787Z",
-        "updatedAt": "2016-05-12T07:52:51.787Z",
-        "id": 15523
+        "createdAt": "2016-05-12T15:14:51.957Z",
+        "updatedAt": "2016-05-12T15:14:51.957Z",
+        "id": 16131
       },
       {
-        "model": 2963,
+        "model": 3059,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.791Z",
-        "updatedAt": "2016-05-12T07:52:51.791Z",
-        "id": 15524
+        "createdAt": "2016-05-12T15:14:51.967Z",
+        "updatedAt": "2016-05-12T15:14:51.967Z",
+        "id": 16132
       },
       {
-        "model": 2963,
+        "model": 3059,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.798Z",
-        "updatedAt": "2016-05-12T07:52:51.798Z",
-        "id": 15525
+        "createdAt": "2016-05-12T15:14:51.985Z",
+        "updatedAt": "2016-05-12T15:14:51.985Z",
+        "id": 16133
       },
       {
-        "model": 2963,
+        "model": 3059,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.803Z",
-        "updatedAt": "2016-05-12T07:52:51.803Z",
-        "id": 15526
+        "createdAt": "2016-05-12T15:14:51.996Z",
+        "updatedAt": "2016-05-12T15:14:51.996Z",
+        "id": 16134
       },
       {
-        "model": 2964,
+        "model": 3060,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.807Z",
-        "updatedAt": "2016-05-12T07:52:51.807Z",
-        "id": 15527
+        "createdAt": "2016-05-12T15:14:52.008Z",
+        "updatedAt": "2016-05-12T15:14:52.008Z",
+        "id": 16135
       },
       {
-        "model": 2964,
+        "model": 3060,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.815Z",
-        "updatedAt": "2016-05-12T07:52:51.815Z",
-        "id": 15528
+        "createdAt": "2016-05-12T15:14:52.016Z",
+        "updatedAt": "2016-05-12T15:14:52.016Z",
+        "id": 16136
       },
       {
-        "model": 2964,
+        "model": 3060,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.820Z",
-        "updatedAt": "2016-05-12T07:52:51.820Z",
-        "id": 15529
+        "createdAt": "2016-05-12T15:14:52.024Z",
+        "updatedAt": "2016-05-12T15:14:52.024Z",
+        "id": 16137
       },
       {
-        "model": 2964,
+        "model": 3060,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.827Z",
-        "updatedAt": "2016-05-12T07:52:51.827Z",
-        "id": 15530
+        "createdAt": "2016-05-12T15:14:52.050Z",
+        "updatedAt": "2016-05-12T15:14:52.050Z",
+        "id": 16138
       },
       {
-        "model": 2965,
+        "model": 3061,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.831Z",
-        "updatedAt": "2016-05-12T07:52:51.831Z",
-        "id": 15531
+        "createdAt": "2016-05-12T15:14:52.059Z",
+        "updatedAt": "2016-05-12T15:14:52.059Z",
+        "id": 16139
       },
       {
-        "model": 2965,
+        "model": 3061,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.837Z",
-        "updatedAt": "2016-05-12T07:52:51.837Z",
-        "id": 15532
+        "createdAt": "2016-05-12T15:14:52.067Z",
+        "updatedAt": "2016-05-12T15:14:52.067Z",
+        "id": 16140
       },
       {
-        "model": 2965,
+        "model": 3061,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.843Z",
-        "updatedAt": "2016-05-12T07:52:51.843Z",
-        "id": 15533
+        "createdAt": "2016-05-12T15:14:52.096Z",
+        "updatedAt": "2016-05-12T15:14:52.096Z",
+        "id": 16141
       },
       {
-        "model": 2965,
+        "model": 3061,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.850Z",
-        "updatedAt": "2016-05-12T07:52:51.850Z",
-        "id": 15534
+        "createdAt": "2016-05-12T15:14:52.104Z",
+        "updatedAt": "2016-05-12T15:14:52.104Z",
+        "id": 16142
       },
       {
-        "model": 2966,
+        "model": 3062,
         "action": "create",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.855Z",
-        "updatedAt": "2016-05-12T07:52:51.855Z",
-        "id": 15535
+        "createdAt": "2016-05-12T15:14:52.112Z",
+        "updatedAt": "2016-05-12T15:14:52.112Z",
+        "id": 16143
       },
       {
-        "model": 2966,
+        "model": 3062,
         "action": "read",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.860Z",
-        "updatedAt": "2016-05-12T07:52:51.860Z",
-        "id": 15536
+        "createdAt": "2016-05-12T15:14:52.156Z",
+        "updatedAt": "2016-05-12T15:14:52.156Z",
+        "id": 16144
       },
       {
-        "model": 2966,
+        "model": 3062,
         "action": "update",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.868Z",
-        "updatedAt": "2016-05-12T07:52:51.868Z",
-        "id": 15537
+        "createdAt": "2016-05-12T15:14:52.175Z",
+        "updatedAt": "2016-05-12T15:14:52.175Z",
+        "id": 16145
       },
       {
-        "model": 2966,
+        "model": 3062,
         "action": "delete",
-        "role": 1112,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.874Z",
-        "updatedAt": "2016-05-12T07:52:51.874Z",
-        "id": 15538
+        "createdAt": "2016-05-12T15:14:52.188Z",
+        "updatedAt": "2016-05-12T15:14:52.188Z",
+        "id": 16146
       },
       {
-        "model": 2961,
+        "model": 3063,
+        "action": "create",
+        "role": 1147,
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:52.204Z",
+        "updatedAt": "2016-05-12T15:14:52.204Z",
+        "id": 16147
+      },
+      {
+        "model": 3063,
         "action": "read",
-        "role": 1113,
+        "role": 1147,
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.881Z",
-        "updatedAt": "2016-05-12T07:52:51.881Z",
-        "id": 15539
+        "createdAt": "2016-05-12T15:14:52.218Z",
+        "updatedAt": "2016-05-12T15:14:52.218Z",
+        "id": 16148
       },
       {
-        "model": 2960,
-        "action": "read",
-        "role": 1113,
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:51.884Z",
-        "updatedAt": "2016-05-12T07:52:51.884Z",
-        "id": 15540
-      },
-      {
-        "model": 2965,
+        "model": 3063,
         "action": "update",
-        "role": 1113,
+        "role": 1147,
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:52.227Z",
+        "updatedAt": "2016-05-12T15:14:52.227Z",
+        "id": 16149
+      },
+      {
+        "model": 3063,
+        "action": "delete",
+        "role": 1147,
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:52.237Z",
+        "updatedAt": "2016-05-12T15:14:52.237Z",
+        "id": 16150
+      },
+      {
+        "model": 3058,
+        "action": "read",
+        "role": 1148,
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:52.246Z",
+        "updatedAt": "2016-05-12T15:14:52.246Z",
+        "id": 16151
+      },
+      {
+        "model": 3057,
+        "action": "read",
+        "role": 1148,
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:52.255Z",
+        "updatedAt": "2016-05-12T15:14:52.255Z",
+        "id": 16152
+      },
+      {
+        "model": 3062,
+        "action": "update",
+        "role": 1148,
         "relation": "owner",
-        "createdAt": "2016-05-12T07:52:51.892Z",
-        "updatedAt": "2016-05-12T07:52:51.892Z",
-        "id": 15541
+        "createdAt": "2016-05-12T15:14:52.264Z",
+        "updatedAt": "2016-05-12T15:14:52.264Z",
+        "id": 16153
       },
       {
-        "model": 2965,
+        "model": 3062,
         "action": "read",
-        "role": 1113,
+        "role": 1148,
         "relation": "owner",
-        "createdAt": "2016-05-12T07:52:51.897Z",
-        "updatedAt": "2016-05-12T07:52:51.897Z",
-        "id": 15542
+        "createdAt": "2016-05-12T15:14:52.274Z",
+        "updatedAt": "2016-05-12T15:14:52.274Z",
+        "id": 16154
       },
       {
-        "role": 1116,
-        "model": 2964,
+        "role": 1151,
+        "model": 3061,
         "action": "read",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.223Z",
-        "updatedAt": "2016-05-12T07:52:52.223Z",
-        "id": 15543
+        "createdAt": "2016-05-12T15:14:53.228Z",
+        "updatedAt": "2016-05-12T15:14:53.228Z",
+        "id": 16155
       },
       {
-        "role": 1116,
-        "model": 2955,
+        "role": 1151,
+        "model": 3051,
         "action": "read",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.235Z",
-        "updatedAt": "2016-05-12T07:52:52.235Z",
-        "id": 15544
+        "createdAt": "2016-05-12T15:14:53.241Z",
+        "updatedAt": "2016-05-12T15:14:53.241Z",
+        "id": 16156
       },
       {
-        "role": 1116,
-        "model": 2957,
+        "role": 1151,
+        "model": 3054,
         "action": "read",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.240Z",
-        "updatedAt": "2016-05-12T07:52:52.240Z",
-        "id": 15545
+        "createdAt": "2016-05-12T15:14:53.254Z",
+        "updatedAt": "2016-05-12T15:14:53.254Z",
+        "id": 16157
       },
       {
-        "role": 1116,
-        "model": 2966,
+        "role": 1151,
+        "model": 3063,
         "action": "read",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.256Z",
-        "updatedAt": "2016-05-12T07:52:52.256Z",
-        "id": 15546
+        "createdAt": "2016-05-12T15:14:53.280Z",
+        "updatedAt": "2016-05-12T15:14:53.280Z",
+        "id": 16158
       },
       {
-        "role": 1116,
-        "model": 2964,
+        "role": 1151,
+        "model": 3061,
         "action": "create",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.259Z",
-        "updatedAt": "2016-05-12T07:52:52.259Z",
-        "id": 15547
+        "createdAt": "2016-05-12T15:14:53.374Z",
+        "updatedAt": "2016-05-12T15:14:53.374Z",
+        "id": 16159
       },
       {
-        "role": 1116,
-        "model": 2955,
+        "role": 1151,
+        "model": 3051,
         "action": "create",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.266Z",
-        "updatedAt": "2016-05-12T07:52:52.266Z",
-        "id": 15548
+        "createdAt": "2016-05-12T15:14:53.392Z",
+        "updatedAt": "2016-05-12T15:14:53.392Z",
+        "id": 16160
       },
       {
-        "role": 1116,
-        "model": 2957,
+        "role": 1151,
+        "model": 3054,
         "action": "create",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.273Z",
-        "updatedAt": "2016-05-12T07:52:52.273Z",
-        "id": 15549
+        "createdAt": "2016-05-12T15:14:53.402Z",
+        "updatedAt": "2016-05-12T15:14:53.402Z",
+        "id": 16161
       },
       {
-        "role": 1116,
-        "model": 2966,
+        "role": 1151,
+        "model": 3063,
         "action": "create",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.288Z",
-        "updatedAt": "2016-05-12T07:52:52.288Z",
-        "id": 15550
+        "createdAt": "2016-05-12T15:14:53.411Z",
+        "updatedAt": "2016-05-12T15:14:53.411Z",
+        "id": 16162
       },
       {
-        "role": 1116,
-        "model": 2964,
-        "action": "delete",
-        "relation": "owner",
-        "createdAt": "2016-05-12T07:52:52.296Z",
-        "updatedAt": "2016-05-12T07:52:52.296Z",
-        "id": 15551
-      },
-      {
-        "role": 1116,
-        "model": 2955,
-        "action": "delete",
-        "relation": "owner",
-        "createdAt": "2016-05-12T07:52:52.300Z",
-        "updatedAt": "2016-05-12T07:52:52.300Z",
-        "id": 15552
-      },
-      {
-        "role": 1116,
-        "model": 2957,
-        "action": "delete",
-        "relation": "owner",
-        "createdAt": "2016-05-12T07:52:52.308Z",
-        "updatedAt": "2016-05-12T07:52:52.308Z",
-        "id": 15553
-      },
-      {
-        "role": 1116,
-        "model": 2966,
-        "action": "delete",
-        "relation": "owner",
-        "createdAt": "2016-05-12T07:52:52.319Z",
-        "updatedAt": "2016-05-12T07:52:52.319Z",
-        "id": 15554
-      },
-      {
-        "role": 1116,
-        "model": 2964,
-        "action": "update",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.324Z",
-        "updatedAt": "2016-05-12T07:52:52.324Z",
-        "id": 15555
-      },
-      {
-        "role": 1116,
-        "model": 2955,
-        "action": "update",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.333Z",
-        "updatedAt": "2016-05-12T07:52:52.333Z",
-        "id": 15556
-      },
-      {
-        "role": 1116,
-        "model": 2957,
-        "action": "update",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.336Z",
-        "updatedAt": "2016-05-12T07:52:52.336Z",
-        "id": 15557
-      },
-      {
-        "role": 1116,
-        "model": 2966,
-        "action": "update",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.340Z",
-        "updatedAt": "2016-05-12T07:52:52.340Z",
-        "id": 15558
-      },
-      {
-        "role": 1115,
-        "model": 2964,
-        "action": "read",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.343Z",
-        "updatedAt": "2016-05-12T07:52:52.343Z",
-        "id": 15559
-      },
-      {
-        "role": 1115,
-        "model": 2955,
-        "action": "read",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.346Z",
-        "updatedAt": "2016-05-12T07:52:52.346Z",
-        "id": 15560
-      },
-      {
-        "role": 1115,
-        "model": 2956,
-        "action": "read",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.349Z",
-        "updatedAt": "2016-05-12T07:52:52.349Z",
-        "id": 15561
-      },
-      {
-        "role": 1115,
-        "model": 2964,
-        "action": "create",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.357Z",
-        "updatedAt": "2016-05-12T07:52:52.357Z",
-        "id": 15562
-      },
-      {
-        "role": 1115,
-        "model": 2955,
-        "action": "create",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.364Z",
-        "updatedAt": "2016-05-12T07:52:52.364Z",
-        "id": 15563
-      },
-      {
-        "role": 1115,
-        "model": 2956,
-        "action": "create",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.371Z",
-        "updatedAt": "2016-05-12T07:52:52.371Z",
-        "id": 15564
-      },
-      {
-        "role": 1115,
-        "model": 2964,
+        "role": 1151,
+        "model": 3061,
         "action": "delete",
         "relation": "owner",
-        "createdAt": "2016-05-12T07:52:52.374Z",
-        "updatedAt": "2016-05-12T07:52:52.374Z",
-        "id": 15565
+        "createdAt": "2016-05-12T15:14:53.420Z",
+        "updatedAt": "2016-05-12T15:14:53.420Z",
+        "id": 16163
       },
       {
-        "role": 1115,
-        "model": 2955,
+        "role": 1151,
+        "model": 3051,
         "action": "delete",
         "relation": "owner",
-        "createdAt": "2016-05-12T07:52:52.384Z",
-        "updatedAt": "2016-05-12T07:52:52.384Z",
-        "id": 15566
+        "createdAt": "2016-05-12T15:14:53.431Z",
+        "updatedAt": "2016-05-12T15:14:53.431Z",
+        "id": 16164
       },
       {
-        "role": 1115,
-        "model": 2956,
+        "role": 1151,
+        "model": 3054,
         "action": "delete",
         "relation": "owner",
-        "createdAt": "2016-05-12T07:52:52.387Z",
-        "updatedAt": "2016-05-12T07:52:52.387Z",
-        "id": 15567
+        "createdAt": "2016-05-12T15:14:53.440Z",
+        "updatedAt": "2016-05-12T15:14:53.440Z",
+        "id": 16165
       },
       {
-        "role": 1115,
-        "model": 2964,
-        "action": "update",
-        "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.390Z",
-        "updatedAt": "2016-05-12T07:52:52.390Z",
-        "id": 15568
+        "role": 1151,
+        "model": 3063,
+        "action": "delete",
+        "relation": "owner",
+        "createdAt": "2016-05-12T15:14:53.461Z",
+        "updatedAt": "2016-05-12T15:14:53.461Z",
+        "id": 16166
       },
       {
-        "role": 1115,
-        "model": 2955,
+        "role": 1151,
+        "model": 3061,
         "action": "update",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.393Z",
-        "updatedAt": "2016-05-12T07:52:52.393Z",
-        "id": 15569
+        "createdAt": "2016-05-12T15:14:53.470Z",
+        "updatedAt": "2016-05-12T15:14:53.470Z",
+        "id": 16167
       },
       {
-        "role": 1115,
-        "model": 2956,
+        "role": 1151,
+        "model": 3051,
         "action": "update",
         "relation": "role",
-        "createdAt": "2016-05-12T07:52:52.397Z",
-        "updatedAt": "2016-05-12T07:52:52.397Z",
-        "id": 15570
+        "createdAt": "2016-05-12T15:14:53.482Z",
+        "updatedAt": "2016-05-12T15:14:53.482Z",
+        "id": 16168
+      },
+      {
+        "role": 1151,
+        "model": 3054,
+        "action": "update",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.509Z",
+        "updatedAt": "2016-05-12T15:14:53.509Z",
+        "id": 16169
+      },
+      {
+        "role": 1151,
+        "model": 3063,
+        "action": "update",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.520Z",
+        "updatedAt": "2016-05-12T15:14:53.520Z",
+        "id": 16170
+      },
+      {
+        "role": 1150,
+        "model": 3061,
+        "action": "read",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.532Z",
+        "updatedAt": "2016-05-12T15:14:53.532Z",
+        "id": 16171
+      },
+      {
+        "role": 1150,
+        "model": 3051,
+        "action": "read",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.556Z",
+        "updatedAt": "2016-05-12T15:14:53.556Z",
+        "id": 16172
+      },
+      {
+        "role": 1150,
+        "model": 3052,
+        "action": "read",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.566Z",
+        "updatedAt": "2016-05-12T15:14:53.566Z",
+        "id": 16173
+      },
+      {
+        "role": 1150,
+        "model": 3061,
+        "action": "create",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.579Z",
+        "updatedAt": "2016-05-12T15:14:53.579Z",
+        "id": 16174
+      },
+      {
+        "role": 1150,
+        "model": 3051,
+        "action": "create",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.590Z",
+        "updatedAt": "2016-05-12T15:14:53.590Z",
+        "id": 16175
+      },
+      {
+        "role": 1150,
+        "model": 3052,
+        "action": "create",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.601Z",
+        "updatedAt": "2016-05-12T15:14:53.601Z",
+        "id": 16176
+      },
+      {
+        "role": 1150,
+        "model": 3061,
+        "action": "delete",
+        "relation": "owner",
+        "createdAt": "2016-05-12T15:14:53.620Z",
+        "updatedAt": "2016-05-12T15:14:53.620Z",
+        "id": 16177
+      },
+      {
+        "role": 1150,
+        "model": 3051,
+        "action": "delete",
+        "relation": "owner",
+        "createdAt": "2016-05-12T15:14:53.647Z",
+        "updatedAt": "2016-05-12T15:14:53.647Z",
+        "id": 16178
+      },
+      {
+        "role": 1150,
+        "model": 3052,
+        "action": "delete",
+        "relation": "owner",
+        "createdAt": "2016-05-12T15:14:53.694Z",
+        "updatedAt": "2016-05-12T15:14:53.694Z",
+        "id": 16179
+      },
+      {
+        "role": 1150,
+        "model": 3061,
+        "action": "update",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.728Z",
+        "updatedAt": "2016-05-12T15:14:53.728Z",
+        "id": 16180
+      },
+      {
+        "role": 1150,
+        "model": 3051,
+        "action": "update",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.763Z",
+        "updatedAt": "2016-05-12T15:14:53.763Z",
+        "id": 16181
+      },
+      {
+        "role": 1150,
+        "model": 3052,
+        "action": "update",
+        "relation": "role",
+        "createdAt": "2016-05-12T15:14:53.791Z",
+        "updatedAt": "2016-05-12T15:14:53.791Z",
+        "id": 16182
       }
     ],
     "profesor": [
@@ -1550,57 +1609,87 @@
         "nombre": "Profesor Nombre",
         "email": "3210149@alu.murciaeduca.es",
         "id": 1,
-        "createdAt": "2016-05-12T07:52:55.473Z",
-        "updatedAt": "2016-05-12T07:52:55.473Z"
+        "createdAt": "2016-05-12T15:15:04.816Z",
+        "updatedAt": "2016-05-12T15:15:04.816Z"
       }
     ],
     "requestlog": [
       {
-        "id": "2dlevoeeoh8xo97m886z7l5p4",
+        "id": "etlpgpu8hxjmfcfv3rzxwtok7",
         "ipAddress": "::ffff:127.0.0.1",
-        "url": "http://localhost/search/prueba",
+        "url": "http://localhost/play",
         "method": "GET",
         "body": {},
-        "model": "termino",
-        "user": 269,
-        "createdAt": "2016-05-12T07:53:12.306Z"
+        "model": "juego",
+        "user": 276,
+        "createdAt": "2016-05-12T15:15:13.347Z"
+      },
+      {
+        "id": "85xg9iui1b90yj9r04xcra5qx",
+        "ipAddress": "::ffff:127.0.0.1",
+        "url": "http://localhost/play",
+        "method": "GET",
+        "body": {},
+        "model": "juego",
+        "user": 276,
+        "createdAt": "2016-05-12T15:15:18.321Z"
+      },
+      {
+        "id": "8ggixoetyku6qje5eaceehx1g",
+        "ipAddress": "::ffff:127.0.0.1",
+        "url": "http://localhost/play",
+        "method": "GET",
+        "body": {},
+        "model": "juego",
+        "user": 276,
+        "createdAt": "2016-05-12T15:15:20.374Z"
+      },
+      {
+        "id": "2571d47mrvawsapf1da7hhnqh",
+        "ipAddress": "::ffff:127.0.0.1",
+        "url": "http://localhost/play",
+        "method": "GET",
+        "body": {},
+        "model": "juego",
+        "user": 276,
+        "createdAt": "2016-05-12T15:15:22.238Z"
       }
     ],
     "role": [
       {
         "name": "admin",
         "active": true,
-        "createdAt": "2016-05-12T07:52:50.962Z",
-        "updatedAt": "2016-05-12T07:52:50.962Z",
-        "id": 1112
+        "createdAt": "2016-05-12T15:14:50.259Z",
+        "updatedAt": "2016-05-12T15:14:50.259Z",
+        "id": 1147
       },
       {
         "name": "registered",
         "active": true,
-        "createdAt": "2016-05-12T07:52:50.968Z",
-        "updatedAt": "2016-05-12T07:52:50.968Z",
-        "id": 1113
+        "createdAt": "2016-05-12T15:14:50.282Z",
+        "updatedAt": "2016-05-12T15:14:50.282Z",
+        "id": 1148
       },
       {
         "name": "public",
         "active": true,
-        "createdAt": "2016-05-12T07:52:50.973Z",
-        "updatedAt": "2016-05-12T07:52:50.973Z",
-        "id": 1114
+        "createdAt": "2016-05-12T15:14:50.290Z",
+        "updatedAt": "2016-05-12T15:14:50.290Z",
+        "id": 1149
       },
       {
         "name": "profesor",
         "active": true,
-        "createdAt": "2016-05-12T07:52:51.947Z",
-        "updatedAt": "2016-05-12T07:52:51.947Z",
-        "id": 1115
+        "createdAt": "2016-05-12T15:14:52.339Z",
+        "updatedAt": "2016-05-12T15:14:52.339Z",
+        "id": 1150
       },
       {
         "name": "alumno",
         "active": true,
-        "createdAt": "2016-05-12T07:52:51.954Z",
-        "updatedAt": "2016-05-12T07:52:51.954Z",
-        "id": 1116
+        "createdAt": "2016-05-12T15:14:52.348Z",
+        "updatedAt": "2016-05-12T15:14:52.348Z",
+        "id": 1151
       }
     ],
     "securitylog": [],
@@ -1609,42 +1698,34 @@
         "nombre": "prueba1",
         "materia": "1",
         "id": 1,
-        "createdAt": "2016-05-12T07:52:55.165Z",
-        "updatedAt": "2016-05-12T07:52:55.178Z"
+        "createdAt": "2016-05-12T15:15:04.375Z",
+        "updatedAt": "2016-05-12T15:15:04.391Z"
       },
       {
         "nombre": "prueba2",
         "materia": "2",
         "id": 2,
-        "createdAt": "2016-05-12T07:52:55.194Z",
-        "updatedAt": "2016-05-12T07:52:55.204Z"
+        "createdAt": "2016-05-12T15:15:04.408Z",
+        "updatedAt": "2016-05-12T15:15:04.420Z"
       },
       {
         "nombre": "prueba3",
         "materia": "1",
         "id": 3,
-        "createdAt": "2016-05-12T07:52:55.219Z",
-        "updatedAt": "2016-05-12T07:52:55.227Z"
+        "createdAt": "2016-05-12T15:15:04.445Z",
+        "updatedAt": "2016-05-12T15:15:04.459Z"
       }
     ],
     "user": [
       {
         "username": "admin",
         "email": "admin@example.com",
-        "createdBy": 268,
-        "owner": 268,
-        "model": 2965,
-        "createdAt": "2016-05-12T07:52:51.023Z",
-        "updatedAt": "2016-05-12T07:52:51.394Z",
-        "id": 268
-      },
-      {
-        "email": "alberto.sierra@murciaeduca.es",
-        "username": "alberto.sierra@murciaeduca.es",
-        "createdAt": "2016-05-12T07:53:09.338Z",
-        "updatedAt": "2016-05-12T07:53:09.433Z",
-        "id": 269,
-        "owner": 269
+        "createdBy": 276,
+        "owner": 276,
+        "model": 3062,
+        "createdAt": "2016-05-12T15:14:50.386Z",
+        "updatedAt": "2016-05-12T15:14:51.128Z",
+        "id": 276
       }
     ],
     "valoracion": [],
@@ -1652,56 +1733,46 @@
       {
         "grupo_alumnos": 1,
         "alumno_grupos": 2,
-        "id": 157
+        "id": 185
       },
       {
         "grupo_alumnos": 1,
         "alumno_grupos": 3,
-        "id": 158
+        "id": 186
       },
       {
         "grupo_alumnos": 1,
         "alumno_grupos": 4,
-        "id": 159
+        "id": 187
       },
       {
         "grupo_alumnos": 2,
         "alumno_grupos": 5,
-        "id": 160
+        "id": 188
       }
     ],
     "alumno_terminos__termino_alumnos": [
       {
         "termino_alumnos": 1,
         "alumno_terminos": 4,
-        "id": 388
+        "id": 402
       },
       {
         "termino_alumnos": 2,
         "alumno_terminos": 4,
-        "id": 389
+        "id": 403
       }
     ],
     "role_users__user_roles": [
       {
-        "role_users": 1112,
-        "user_roles": 268,
-        "id": 529
+        "role_users": 1147,
+        "user_roles": 276,
+        "id": 545
       },
       {
-        "role_users": 1113,
-        "user_roles": 268,
-        "id": 530
-      },
-      {
-        "role_users": 1113,
-        "user_roles": 269,
-        "id": 531
-      },
-      {
-        "role_users": 1116,
-        "user_roles": 269,
-        "id": 532
+        "role_users": 1148,
+        "user_roles": 276,
+        "id": 546
       }
     ]
   },
@@ -1877,6 +1948,40 @@
       "curso": {
         "type": "string",
         "size": 1
+      },
+      "createdBy": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "createdBy",
+        "index": true
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner",
+        "index": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "juego": {
+      "posicionJuego": {
+        "type": "integer"
+      },
+      "puntos": {
+        "type": "integer"
       },
       "createdBy": {
         "type": "integer",
@@ -2470,24 +2575,24 @@
   "counters": {
     "criteria": {},
     "model": {
-      "id": 2966
+      "id": 3063
     },
     "passport": {
-      "id": 266
+      "id": 273
     },
     "permission": {
-      "id": 15570
+      "id": 16182
     },
     "requestlog": {},
     "role": {
-      "id": 1116
+      "id": 1151
     },
     "securitylog": {},
     "user": {
-      "id": 269
+      "id": 276
     },
     "role_users__user_roles": {
-      "id": 532
+      "id": 546
     },
     "alumno": {
       "id": 9
@@ -2502,13 +2607,13 @@
       "id": 1
     },
     "alumno_grupos__grupo_alumnos": {
-      "id": 160
+      "id": 188
     },
     "termino": {
       "id": 15
     },
     "alumno_terminos__termino_alumnos": {
-      "id": 389
+      "id": 403
     },
     "alumno_terminos__termino_alumno": {
       "id": 4
@@ -2518,6 +2623,7 @@
     },
     "valoracion": {
       "id": 6
-    }
+    },
+    "juego": {}
   }
 }
