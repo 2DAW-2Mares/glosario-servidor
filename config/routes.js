@@ -49,6 +49,15 @@ module.exports.routes = {
     'TerminoController.ultimos'
   ],
 
+  'GET /play' : [
+    'JuegoController.muestraDefinicion',
+  ],
+
+  'POST /play' : [
+    'JuegoController.respondeTermino',
+    'JuegoController.muestraDefinicion'
+  ],
+
   'GET r|^/grupo/(\\d+)/listarAlumnos$|grupoId' : [
     'GrupoController.load',
     'ProfesorController.listarAlumnos'
