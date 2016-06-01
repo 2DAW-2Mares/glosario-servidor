@@ -37,7 +37,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  //allRoutes: true,
+  allRoutes: true,
 
   /***************************************************************************
   *                                                                          *
@@ -47,7 +47,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  //origin: '*',
+  origin: '*',
 
   /***************************************************************************
   *                                                                          *
@@ -55,7 +55,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  // credentials: true,
+  credentials: true,
 
   /***************************************************************************
   *                                                                          *
@@ -64,7 +64,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  //methods: 'GET, POST, PUT, DELETE, OPTIONS, HEAD',
+  methods: 'GET, POST, PUT, DELETE, OPTIONS, HEAD',
 
   /***************************************************************************
   *                                                                          *
@@ -73,7 +73,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  //headers: 'content-type, Access-Control-Allow-Origin, Authorization',
+  headers: 'access-control-allow-origin, X-Requested-With, Content-Type, Accept, Key, Authorization, Access-Control-Allow-Credentials, Access-Control-Allow-Headers, access-control-allow-methods, cross-origin',
 
 
 };

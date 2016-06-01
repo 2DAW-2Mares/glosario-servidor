@@ -54,7 +54,7 @@ module.exports = {
 
 	anyadir: function(req, res, next){
 		var definicion = req.body.definicion;
-		console.log(req.session);
+		//console.log(req.session);
 		Alumno.findOne({
 			where: {user: req.session.passport.user}
 		}).then(function(alumno){
@@ -76,6 +76,7 @@ module.exports = {
 		Definicion.find({
 			where: {termino: req.termino.id, denunciado: false/*, alumno: req.session.passport.user*/}
 		}).then(function(definiciones){
+			console.log(definiciones);
 			if(definiciones){
 				res.send(definiciones);
 			}else{

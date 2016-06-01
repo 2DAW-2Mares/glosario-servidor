@@ -14,7 +14,8 @@ module.exports = {
   		},
 
       denunciado: {
-        type: 'boolean'
+        type: 'boolean',
+        defaultsTo: false
       },
 
   		valoraciones:{
