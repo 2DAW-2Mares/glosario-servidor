@@ -55,11 +55,11 @@ module.exports = {
 	anyadir: function(req, res, next){
 		var definicion = req.body.definicion;
 		//console.log(req.session);
-		Alumno.findOne({
-			where: {user: req.session.passport.user}
-		}).then(function(alumno){
-			if(alumno){
-				Definicion.create({definicion: definicion, termino: req.termino.id, alumno: alumno.id})
+		//Alumno.findOne({
+		//	where: {user: req.session.passport.user}
+		//}).then(function(alumno){
+			//if(alumno){
+				Definicion.create({definicion: definicion, termino: req.termino.id, alumno: 4})
 				.exec(function createdCB(err, created){
 					if(err){
 						next(new Error(err));
@@ -68,13 +68,13 @@ module.exports = {
 						res.json(created);
 					}
 				})
-			}
-		})
+			//}
+		//})
 	},
 
 	definiciones: function(req, res, next){
 		Definicion.find({
-			where: {termino: req.termino.id, denunciado: false/*, alumno: req.session.passport.user*/}
+			where: {termino: req.termino.id /*denunciado: false/*, alumno: req.session.passport.user*/}
 		}).then(function(definiciones){
 			console.log(definiciones);
 			if(definiciones){

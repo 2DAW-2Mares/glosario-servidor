@@ -29,14 +29,14 @@ module.exports = {
 	},
 
 	valorar: function(req, res, next){
-		var valoracion = req.body.estrellas;
+		var valoracion = req.body.valoracion;
 		console.log(valoracion);
-		Alumno.findOne({
-			where: {user: req.session.passport.user}
-		}).then(function(alumno){
-			if(alumno){
-				console.log(valoracion+" -- "+ alumno);
-				Valoracion.create({usuario: alumno.nombre, valoracion: valoracion, definicion: req.definicion.id})
+		//Alumno.findOne({
+			//where: {user: req.session.passport.user}
+		//}).then(function(alumno){
+			//if(alumno){
+				console.log(valoracion+" -- "+ 'alumno');
+				Valoracion.create({usuario: 'pepe', valoracion: valoracion, definicion: req.definicion.id})
 				.exec(function createdCB(err, created){
 					if(!err){
 						res.json(created);
@@ -44,8 +44,8 @@ module.exports = {
 						next(new Error('Ocurrio un error!!'));
 					}
 				})
-			}
-		})
+			//}
+		//})
 	}
 	
 };

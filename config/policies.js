@@ -72,11 +72,11 @@ module.exports.policies = {
   GrupoController: {
     'load': ['sessionAuth']
   },
-
+/*
   DefinicionController: {
     'load': ['sessionAuth'],
     'valorar': ['sessionAuth']
-  },
+  },*/
 
 
 };
