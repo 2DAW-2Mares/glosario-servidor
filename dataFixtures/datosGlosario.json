@@ -27,12 +27,36 @@
     ]   
   },
   {
+    "model":"valoracion",
+    "items":[
+              {
+                  "usuario": "pepe",
+                  "valoracion": 5,
+                  "definicion": 1,
+                  "id": 1
+              },
+              {
+                  "usuario": "antonio",
+                  "valoracion": 5,
+                  "definicion": 1,
+                  "id": 2
+              },
+              {
+                  "usuario": "juan",
+                  "valoracion": 2,
+                  "definicion": 1,
+                  "id": 3
+              }
+    ]   
+  },
+  {
     "model":"definicion",
     "items":[
               {
                   "definicion": "definicion de prueba 1",
                   "denunciado": false,
                   "termino": 1,
+                  "valoraciones": [],
                   "alumno": 4,
                   "id": 1
               },
@@ -40,6 +64,7 @@
                   "definicion": "definicion de prueba 2",
                   "denunciado": false,
                   "termino": 2,
+                  "valoraciones": [],
                   "alumno": 4,
                   "id": 2
               },
@@ -47,6 +72,7 @@
                   "definicion": "definicion de prueba 3",
                   "denunciado": false,
                   "termino": 1,
+                  "valoraciones": [],
                   "alumno": 4,
                   "id": 3
               }

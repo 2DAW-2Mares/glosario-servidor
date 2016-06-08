@@ -10,7 +10,7 @@ module.exports = {
 	load: function(req, res, next) {
 		Definicion.findOne({
 			where: { id: Number(req.params.definicionId)}
-		}).then(function(definicion){
+		}).populate('valoraciones').then(function(definicion){
 			if(definicion) {
 				req.definicion = definicion;
 				next();
@@ -46,6 +46,28 @@ module.exports = {
 				})
 			//}
 		//})
+	},
+
+	mediaValoraciones: function(req, res, next){
+		total = 0;
+/*
+		Valoracion.find({
+			where: {definicion: req.definicion.id}
+		}).average('valoracio').then(function(mediaValoraciones){
+			res.json(mediaValoraciones);
+		})
+*/
+
+		Valoracion.find({
+			where: {definicion: req.definicion.id}
+		}).then(function(valoraciones){
+			rango = valoraciones.length;
+			valoraciones.forEach(function(valoracion){
+				total += parseInt(valoracion.valoracion);
+				console.log(total);
+			})
+			res.json('Media Valoraciones: ' + parseInt(total/rango));
+		})
 	}
 	
 };
