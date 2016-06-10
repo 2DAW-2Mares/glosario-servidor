@@ -30,12 +30,12 @@ module.exports = {
 
 	valorar: function(req, res, next){
 		var valoracion = req.body.valoracion;
-		console.log(valoracion);
+		//console.log(valoracion);
 		//Alumno.findOne({
 			//where: {user: req.session.passport.user}
 		//}).then(function(alumno){
 			//if(alumno){
-				console.log(valoracion+" -- "+ 'alumno');
+				//console.log(valoracion+" -- "+ 'alumno');
 				Valoracion.create({usuario: 'pepe', valoracion: valoracion, definicion: req.definicion.id})
 				.exec(function createdCB(err, created){
 					if(!err){
@@ -50,7 +50,7 @@ module.exports = {
 
 	mediaValoraciones: function(req, res, next){
 		total = 0;
-/*
+/*		Al ser ENUM devuelve 'Null' con la funcion average...
 		Valoracion.find({
 			where: {definicion: req.definicion.id}
 		}).average('valoracio').then(function(mediaValoraciones){
@@ -64,9 +64,21 @@ module.exports = {
 			rango = valoraciones.length;
 			valoraciones.forEach(function(valoracion){
 				total += parseInt(valoracion.valoracion);
-				console.log(total);
+				//console.log(total);
 			})
 			res.json('Media Valoraciones: ' + parseInt(total/rango));
+		})
+	}, 
+
+	definicionDenunciada: function(req, res, next){
+		Definicion.find({
+			where: {denunciado: true}
+		}).sort('updatedAt DESC').then(function(definiciones){
+			if(definiciones){
+				res.json(definiciones);
+			}else{
+				res.json('No hay definiciones denunciadas aun!!');
+			}
 		})
 	}
 	

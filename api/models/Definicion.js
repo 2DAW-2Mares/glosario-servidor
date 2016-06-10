@@ -23,6 +23,11 @@ module.exports = {
   			via: 'definicion'
   		},
 
+      media:{
+        type: 'integer',
+        defaultsTo: 0
+      },
+
   		termino:{
   			model: 'termino'
   		},

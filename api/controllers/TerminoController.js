@@ -75,9 +75,30 @@ module.exports = {
 	definiciones: function(req, res, next){
 		Definicion.find({
 			where: {termino: req.termino.id /*denunciado: false/*, alumno: req.session.passport.user*/}
-		}).then(function(definiciones){
-			console.log(definiciones);
+		}).populate('valoraciones').then(function(definiciones){
+			//console.log(definiciones);
 			if(definiciones){
+
+				definiciones.forEach(function(definicion){
+					suma = 0;
+					total = 0;
+					rango = 0;
+					respuesta = definicion.valoraciones;
+					rango = respuesta.length;
+					if(!rango){
+						rango=0;
+					}
+					respuesta.forEach(function(valoracion){
+						suma += parseInt(valoracion.valoracion);
+					})
+
+					if(suma!=0){
+						total = parseInt(suma/rango);
+					}else{
+						total = 0;
+					}
+					definicion.media = total;
+				})
 				res.send(definiciones);
 			}else{
 				res.send("No se enontraron definiciones!");
