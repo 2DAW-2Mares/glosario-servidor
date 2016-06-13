@@ -72,11 +72,11 @@ module.exports.routes = {
     'TerminoController.load',
     'TerminoController.definiciones'
   ],
-
+/*
   'GET r|^/definicion/(\\d+)/mediaValoraciones$|definicionId' : [
     'DefinicionController.load',
     'DefinicionController.mediaValoraciones'
-  ],
+  ],*/
 
   'GET /denunciadas': [
     'DefinicionController.definicionDenunciada'

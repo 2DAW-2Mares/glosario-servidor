@@ -47,7 +47,7 @@ module.exports = {
 			//}
 		//})
 	},
-
+/*
 	mediaValoraciones: function(req, res, next){
 		total = 0;
 /*		Al ser ENUM devuelve 'Null' con la funcion average...
@@ -56,7 +56,7 @@ module.exports = {
 		}).average('valoracio').then(function(mediaValoraciones){
 			res.json(mediaValoraciones);
 		})
-*/
+
 
 		Valoracion.find({
 			where: {definicion: req.definicion.id}
@@ -69,11 +69,11 @@ module.exports = {
 			res.json('Media Valoraciones: ' + parseInt(total/rango));
 		})
 	}, 
-
+*/
 	definicionDenunciada: function(req, res, next){
 		Definicion.find({
 			where: {denunciado: true}
-		}).sort('updatedAt DESC').then(function(definiciones){
+		}).sort('updatedAt ASC').populate('termino').then(function(definiciones){
 			if(definiciones){
 				res.json(definiciones);
 			}else{
