@@ -14,8 +14,8 @@ _.merge(exports, {
 		    protocol: 'oauth2',
 		    strategy: require('passport-google-oauth').OAuth2Strategy,
 		    options: {
-		      clientID: '735582085260-82qpbj88q7dc0tog2efhomrkj69k8ahk.apps.googleusercontent.com',
-		      clientSecret: 'Md_kylqc7NQYkuUsPlZxBoMl',
+		      clientID: '328156475210-98crr3l1oef8ucimrj9sou0lb72arsgm.apps.googleusercontent.com',
+		      clientSecret: 'B-eANd6KroupdcKnGVqWgn-O',
 		      scope: ['profile', 'email'],
 		      
 		    }

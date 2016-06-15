@@ -64,7 +64,7 @@ module.exports.policies = {
   AuthController: {
     '*': [ 'passport' ]
   },
-
+/*
   ProfesorController: {
     'listarAlumnos': ['sessionAuth']
   },
