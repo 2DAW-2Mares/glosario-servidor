@@ -29,7 +29,7 @@ module.exports = {
 
 		respondeTermino: function(req, res, next){
 			respuesta = req.body;
-			Termino.find({
+			Termino.findOne({
 				where: {id: respuesta.id, nombre: respuesta.nombre}
 			}).then(function(termino){
 				if(termino){
@@ -54,4 +54,5 @@ module.exports = {
 		}
 
 };
+
 
