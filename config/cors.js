@@ -73,7 +73,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  headers: 'Bearer, access-control-allow-origin, X-Requested-With, Content-Type, Accept, Key, Authorization, Access-Control-Allow-Credentials, Access-Control-Allow-Headers, access-control-allow-methods, cross-origin',
+  headers: 'access-control-allow-origin, X-Requested-With, Content-Type, Accept, Key, Authorization, Access-Control-Allow-Credentials, Access-Control-Allow-Headers, access-control-allow-methods, cross-origin',
 
 
 };
