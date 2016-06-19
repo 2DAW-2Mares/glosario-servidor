@@ -82,7 +82,7 @@ module.exports.connections = {
     database: 'd9cp3136go05e5',
     ssl: true,
     port: 5432*/
-    url:  process.env.DATABASE_URL,
+    url:  process.env.HEROKU_POSTGRESQL_BLACK_URL,
     ssl: true
   }
 
