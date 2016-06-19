@@ -5,14 +5,14 @@
     "items":[
               {
                   "codigo": "LEN",
-                  "ensenanza":"Legua Castellana",
+                  "ensenanza":"Lengua Castellana",
                   "curso": "2DAW",
                   "materia": "Lengua",
                   "id": 1
               },
               {
                   "codigo": "MAT",
-                  "ensenanza":"Matematicas Aplicadas",
+                  "ensenanza":"Matemáticas Aplicadas",
                   "curso": "2DAW",
                   "materia": "Matematicas",
                   "id": 2
@@ -53,7 +53,7 @@
     "model":"definicion",
     "items":[
               {
-                  "definicion": "definicion de prueba 1",
+                  "definicion": "Es un framework para Node.js que nos facilita en gran medida el desarrollo de APIs REST",
                   "denunciado": false,
                   "termino": 1,
                   "valoraciones": [],
@@ -61,7 +61,7 @@
                   "id": 1
               },
               {
-                  "definicion": "definicion de prueba 2",
+                  "definicion": "Es un framework de aplicaciones móviles HTML5 dirigida a la creación de aplicaciones móviles híbridas.",
                   "denunciado": false,
                   "termino": 2,
                   "valoraciones": [],
@@ -69,9 +69,9 @@
                   "id": 2
               },
               {
-                  "definicion": "definicion de prueba 3",
+                  "definicion": "Es un framework MVC de código abierto desarrollado por Google y escrito en Javascript, que trabaja del lado del cliente",
                   "denunciado": false,
-                  "termino": 1,
+                  "termino": 3,
                   "valoraciones": [],
                   "alumno": 4,
                   "id": 3
@@ -84,21 +84,21 @@
       {
           "definiciones": [],
           "alumnos": [],
-          "nombre": "prueba1",
+          "nombre": "SailsJS",
           "materia": 1,
           "id": 1
       },
       {
           "definiciones": [],
           "alumnos": [],
-          "nombre": "prueba2",
+          "nombre": "Ionic",
           "materia": 2,
           "id": 2
       },
       {
           "definiciones": [],
           "alumnos": [],
-          "nombre": "prueba3",
+          "nombre": "AngularJS",
           "materia": 1,
           "id": 3
       }
@@ -141,9 +141,9 @@
               "id": 1
           },
           "dni": "12345678A",
-          "apellido1": "alumno1ap1",
-          "apellido2": "alumno1ap2",
-          "nombre": "alumno1nombre",
+          "apellido1": "Obiol",
+          "apellido2": "Sánchez",
+          "nombre": "Antonio",
           "email": "email1@murciaeduca.es",
           "fechaNac": "2000-01-01T00:00:00.000Z",
           "id": 2
@@ -159,9 +159,9 @@
               "id": 1
           },
           "dni": "12345678B",
-          "apellido1": "alumno2ap1",
-          "apellido2": "alumno2ap2",
-          "nombre": "alumno2nombre",
+          "apellido1": "Villca",
+          "apellido2": "Choque",
+          "nombre": "Osmar",
           "email": "email2@murciaeduca.es",
           "fechaNac": "2000-01-02T00:00:00.000Z",
           "id": 3
@@ -177,9 +177,9 @@
               "id": 1
           },
           "dni": "12345678C",
-          "apellido1": "alumno3ap1",
-          "apellido2": "alumno3ap2",
-          "nombre": "alumno3nombre",
+          "apellido1": "Jimenez",
+          "apellido2": "Hernández",
+          "nombre": "Luis Adan",
           "email": "3210148@alu.murciaeduca.es",
           "fechaNac": "2000-01-03T00:00:00.000Z",
           "id": 4
@@ -195,9 +195,9 @@
               "id": 2
           },
           "dni": "12345678D",
-          "apellido1": "alumno4ap1",
-          "apellido2": "alumno4ap2",
-          "nombre": "alumno4nombre",
+          "apellido1": "Baquerizo",
+          "apellido2": "Jimenez",
+          "nombre": "Alex Rodolfo",
           "email": "alumno@alu.murciaeduca.es",
           "fechaNac": "2000-01-04T00:00:00.000Z",
           "id": 5
