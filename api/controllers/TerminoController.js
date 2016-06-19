@@ -19,7 +19,7 @@ module.exports = {
 	},
 
 	ultimos: function(req, res, next){
-		Termino.find().sort('id DESC').limit(5).then(function(terminos){
+		Termino.find().sort('id DESC').limit(20).then(function(terminos){
 			if(terminos){
 				res.json(terminos);
 			}
@@ -30,7 +30,7 @@ module.exports = {
 		//console.log(req.materia);
 		Termino.find({
 			where: {materia: req.materia.id}
-		}).sort('id DESC').limit(5).then(function(terminos){
+		}).sort('id DESC').limit(20).then(function(terminos){
 			if(terminos){
 				res.json(terminos);
 			}
