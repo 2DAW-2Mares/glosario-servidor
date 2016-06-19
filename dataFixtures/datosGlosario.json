@@ -57,7 +57,7 @@
                   "denunciado": false,
                   "termino": 1,
                   "valoraciones": [],
-                  "alumno": 4,
+                  "alumno": 2,
                   "id": 1
               },
               {
@@ -65,7 +65,7 @@
                   "denunciado": false,
                   "termino": 2,
                   "valoraciones": [],
-                  "alumno": 4,
+                  "alumno": 5,
                   "id": 2
               },
               {
@@ -191,7 +191,7 @@
               "grupo": "1DAW",
               "subgrupo": "1DAWO",
               "ensenyanza": "Desarrollo de Aplicaciones Web",
-              "curso": "1",
+              "curso": "2",
               "id": 2
           },
           "dni": "12345678D",
