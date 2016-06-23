@@ -76,15 +76,16 @@ module.exports.connections = {
   ***************************************************************************/
   somePostgresqlServer: {
     adapter: 'sails-postgresql',
-/*    host: 'ec2-54-163-239-63.compute-1.amazonaws.com',
-    user: 'ltpjneaitfggzl',
-    password: 'Mxn5RG5EIoq-BpW6_a7GYDanlj',
-    database: 'd9cp3136go05e5',
-    ssl: true,
-    port: 5432*/
+    //host: 'ec2-54-228-189-127.eu-west-1.compute.amazonaws.com',
+   // user: 'sdcafercsbjgja',
+   // password: 'nZvsyzmhCzloImDCMvDfA4NnIj',
+   // database: 'd8bqep0kh99lgk',
+   // ssl: true,
+   // port: 5432,
     url:  process.env.HEROKU_POSTGRESQL_BLACK_URL,
     ssl: true,
-    pool: true
+    pool: true,
+    poolSize: 20
   }
 
 

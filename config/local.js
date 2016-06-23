@@ -91,3 +91,12 @@ module.exports.permissions = {
   adminEmail: 'admin@example.com',
   adminPassword: 'admin1234'
 };
+
+module.exports = {
+
+    model: {
+        migrate: 'safe'
+    },
+    environment: 'production',
+   
+}
